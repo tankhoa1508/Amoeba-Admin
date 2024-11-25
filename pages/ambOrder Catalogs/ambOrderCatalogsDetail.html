@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amoeba Admin</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css"> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="./ambOrderCatalogs.css" />
+  </head>
+  <body>
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+      <div class="wrapper sidebar-wrapper">
+        <div class="logo">
+          <a href="../ambOrder/ambOrder.html">
+            <img
+              src="../../assets/images/logo-amoeba.png"
+              alt=""
+              width="33.53"
+              height="38"
+            />
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list leftSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Left Sidebar Navigation -->
+
+    <!-- Right Sidebar Navigation -->
+    <div class="sidebar sidebar2">
+      <div class="wrapper sidebar-wrapper">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list rightSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Right Sidebar Navigation -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <div class="name-page">ambOrder Catalogs</div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <div class="subsearch-container">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-nav__subsearch"
+                />
+                <img
+                  src="../../assets/images/search-icon.svg"
+                  class="subsearch-icon"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="noti-dropdown">
+                <button class="noti-dropbtn" onclick="notiDropdown()">
+                  <img
+                    src="../../assets/images/noti-header.svg"
+                    class="noti-header"
+                    alt=""
+                  />
+                  <img
+                    src="../../assets/images/noti-mark-header.svg"
+                    class="noti-mark-header"
+                    alt=""
+                  />
+                </button>
+                <div class="noti-dropdown-content" id="noti-Dropdown">
+                  <a href="#">Lorem ipsum dolor sit amet.</a>
+                  <a href="#">Lorem, ipsum dolor.</a>
+                  <a href="#"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus, reiciendis.</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="language-dropdown">
+                <button class="language-dropbtn" onclick="languageDropdown()">
+                  <img
+                    src="../../assets/images/language.svg"
+                    class="language-header"
+                    alt=""
+                  />
+                </button>
+                <div class="language-dropdown-content" id="language-Dropdown">
+                  <a href="#">English</a>
+                  <a href="#">Vietnamese</a>
+                  <a href="#">Korean</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <img
+                src="../../assets/images/avatar.png"
+                class="avatar-header"
+                alt=""
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <section class="mainContent">
+      <div class="mainContent__container">
+        <div class="top-elements">
+          <a href="./ambOrderCatalogs.html">
+            <img src="../../assets/images/back-icon.svg" alt="" />
+          </a>
+
+          <button class="btn-save">Save</button>
+        </div>
+
+        <div class="detail-container">
+          <div class="row row-container">
+            <div class="col col-container">
+              <div class="top-col">
+                <div class="detail-avatar"></div>
+                <div>
+                  <div class="name">DOPE Summer 2024 Collec...</div>
+                  <div class="id">#CA.AGV274</div>
+                  <div class="status bg-active">Active</div>
+                </div>
+                <img
+                  class="img1st"
+                  src="../../assets/images/top-detail-icon.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <img
+                  class="img2nd"
+                  src="../../assets/images/top-detail-icon2.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+              </div>
+
+              <div class="row row-cols-2">
+                <div class="col col-6">
+                  <label for="catalogID">Catalog ID</label>
+                  <input
+                    type="text"
+                    id="catalogID"
+                    name="catalogID"
+                    value="#CA.AGV274"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="catalogURL">Catalog URL</label>
+                  <input
+                    type="text"
+                    id="catalogURL"
+                    name="catalogURL"
+                    value="https://cart.amoeba.site/377"
+                  />
+                </div>
+
+                <div class="col col-12">
+                  <label for="catalogTitle">Catalog Title</label>
+                  <input
+                    type="text"
+                    id="catalogTitle"
+                    name="catalogTitle"
+                    value="Dope Summer 2024 Collections Sale Off 40%"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="status">Status</label> <br />
+                  <select name="status" id="status">
+                    <option value="published">Published</option>
+                    <option value="unpublish">Unpublish</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="sharedCatalog">Shared Catalog</label> <br />
+                  <select name="sharedCatalog" id="sharedCatalog">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="startDate">Start Date</label>
+                  <input type="date" id="startDate" name="startDate" />
+                </div>
+
+                <div class="col col-6">
+                  <label for="endDate">End Date</label>
+                  <input type="date" id="endDate" name="endDate" />
+                </div>
+
+                <div class="col col-12">
+                  <label for="storeDescription">Store Description</label>
+
+                  <textarea
+                    id="storeDescription"
+                    name="storeDescription"
+                    rows="4"
+                    cols="50"
+                  >
+establishment that specializes in serving traditional and contemporary Korean cuisine. Known for its emphasis on fresh ingredients, distinct flavors, and a balance of various food groups, Korean restaurants offer a wide array of dishes. These include bibimbap (a mixed rice dish), kimchi (fermented vegetables), bulgogi (marinated beef barbecue).
+                    </textarea
+                  >
+                </div>
+
+                <div class="col col-12">
+                  <label for="hashtag">Hashtag</label>
+                  <input
+                    type="text"
+                    id="hashtag"
+                    name="hashtag"
+                    value="sale, summer, collection, 2024, sportwear, bikini"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="adminStatus">Admin Status</label> <br />
+                  <select name="adminStatus" id="adminStatus">
+                    <option value="approved">Approved</option>
+                    <option value="unpublish">Unpublish</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="adminRecommended">Admin Recommended</label> <br />
+                  <select name="adminRecommended" id="adminRecommended">
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="orderType">Order Type</label>
+                  <input
+                    type="text"
+                    id="orderType"
+                    name="orderType"
+                    value="Delivery, Pickup, Reservation"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="paymentType">Payment Type</label>
+                  <input
+                    type="text"
+                    id="paymentType"
+                    name="paymentType"
+                    value="Pay Now, Pay On Delivery"
+                  />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-4 box">
+                  <div class="title-detail">Orders</div>
+                  <div class="quantity-detail">117</div>
+                </div>
+                <div class="col col-4 box">
+                  <div class="title-detail">Affiliate Download</div>
+                  <div class="quantity-detail">9</div>
+                </div>
+                <div class="col col-4 box">
+                  <div class="title-detail">Affiliate Sold</div>
+                  <div class="quantity-detail">86</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-container col2">
+              <div class="row row-cols-2">
+                <div class="col col-12 big-img"></div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="createdDate">Created Date</label>
+                  <input type="date" id="createdDate" name="createdDate" />
+                </div>
+
+                <div class="col col-6">
+                  <label for="updatedDate">Updated Date</label>
+                  <input type="date" id="updatedDate" name="updatedDate" />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="userID">User ID</label>
+                  <input
+                    type="text"
+                    id="userID"
+                    name="userID"
+                    value="#US.AGV274"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    value="김익용"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="userEmail">User Email</label>
+                  <input
+                    type="email"
+                    id="userEmail"
+                    name="userEmail"
+                    value="fremd@gmail.com"
+                  />
+                </div>
+                <div class="col col-6">
+                  <span class="label-name">Phone Number</span>
+                  <div class="label-in-input">
+                    <label for="phoneNumber">+84</label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      pattern="[0][0-9]{9}"
+                      value="0334542911"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-container col3">
+              <div class="row">
+                <div class="title">Category</div>
+
+                <div class="category-area">
+                  <label for="createNewCategory">Create new Category</label
+                  ><br />
+                  <input
+                    type="text"
+                    id="createNewCategory"
+                    name="createNewCategory"
+                    placeholder="Enter new category"
+                  />
+
+                  <input
+                    type="image"
+                    class="add-icon"
+                    src="../../assets/images/add-category-icon.png"
+                    alt="Add Category"
+                  />
+
+                  <div class="category-item">
+                    <div class="name">Long Sleeves Dresses</div>
+                    <input
+                      type="image"
+                      class="close-icon"
+                      src="../../assets/images/close-circle.svg"
+                    />
+                  </div>
+                  <div class="category-item">
+                    <div class="name">Maxi Dresses</div>
+                    <input
+                      type="image"
+                      class="close-icon"
+                      src="../../assets/images/close-circle.svg"
+                    />
+                  </div>
+                  <div class="category-item">
+                    <div class="name">Bikini</div>
+                    <input
+                      type="image"
+                      class="close-icon"
+                      src="../../assets/images/close-circle.svg"
+                    />
+                  </div>
+                  <div class="category-item">
+                    <div class="name">Beach Short</div>
+                    <input
+                      type="image"
+                      class="close-icon"
+                      src="../../assets/images/close-circle.svg"
+                    />
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="title">
+                  Products <span class="text-dark fw-normal">(24)</span>
+                </div>
+
+                <div class="product-area">
+                  <div class="category-list">
+                    <div class="category-item">
+                      <div class="name">All</div>
+                    </div>
+  
+                    <div class="category-item">
+                      <div class="name">Long Sleeves Dresses</div>
+                    </div>
+  
+                    <div class="category-item">
+                      <div class="name">Maxi Dresses</div>
+                    </div>
+  
+                    <div class="category-item">
+                      <div class="name">Bikini</div>
+                    </div>
+   
+                    <div class="category-item">
+                      <div class="name">Beach Short</div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+                    
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+                    
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+
+                    <!-- <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+                    
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="col col-3 product-card">
+                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
+                      <div class="body">
+                        <p class="name">Long Sleeve Yell...</p>
+                        <p class="productID">#PD.AHC271</p>
+                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
+                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
+                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
+                      </div>
+                    </div> -->
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Content -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+/* Sidebar Navigation */
+
+
+/* divider */
+.packages::after {
+    content: " ";
+    display: block;
+    margin-top: 8px;
+    max-width: 72px;
+    border-bottom: dashed 1px #616161;
+    opacity: 0.3;
+}
+
+
+
+
+/* End Sidebar */
+
+
+/* Header */
+
+
+/* End Header */

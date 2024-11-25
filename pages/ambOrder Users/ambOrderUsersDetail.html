@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amoeba Admin</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css"> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="./ambOrderUsers.css" />
+  </head>
+  <body>
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+      <div class="wrapper sidebar-wrapper">
+        <div class="logo">
+          <a href="../ambOrder/ambOrder.html">
+            <img
+              src="../../assets/images/logo-amoeba.png"
+              alt=""
+              width="33.53"
+              height="38"
+            />
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list leftSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Left Sidebar Navigation -->
+
+    <!-- Right Sidebar Navigation -->
+    <div class="sidebar sidebar2">
+      <div class="wrapper sidebar-wrapper">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list rightSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Right Sidebar Navigation -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <div class="name-page">ambOrder Users</div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <div class="subsearch-container">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-nav__subsearch"
+                />
+                <img
+                  src="../../assets/images/search-icon.svg"
+                  class="subsearch-icon"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="noti-dropdown">
+                <button class="noti-dropbtn" onclick="notiDropdown()">
+                  <img
+                    src="../../assets/images/noti-header.svg"
+                    class="noti-header"
+                    alt=""
+                  />
+                  <img
+                    src="../../assets/images/noti-mark-header.svg"
+                    class="noti-mark-header"
+                    alt=""
+                  />
+                </button>
+                <div class="noti-dropdown-content" id="noti-Dropdown">
+                  <a href="#">Lorem ipsum dolor sit amet.</a>
+                  <a href="#">Lorem, ipsum dolor.</a>
+                  <a href="#"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus, reiciendis.</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="language-dropdown">
+                <button class="language-dropbtn" onclick="languageDropdown()">
+                  <img
+                    src="../../assets/images/language.svg"
+                    class="language-header"
+                    alt=""
+                  />
+                </button>
+                <div class="language-dropdown-content" id="language-Dropdown">
+                  <a href="#">English</a>
+                  <a href="#">Vietnamese</a>
+                  <a href="#">Korean</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <img
+                src="../../assets/images/avatar.png"
+                class="avatar-header"
+                alt=""
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <section class="mainContent">
+      <div class="mainContent__container">
+        <div class="top-elements">
+          <a href="./ambOrderUsers.html">
+            <img src="../../assets/images/back-icon.svg" alt="" />
+          </a>
+
+          <button class="btn-save">Save</button>
+        </div>
+
+        <div class="detail-container">
+          <div class="row row-container">
+            <div class="col col-container">
+              <div class="top-col">
+                <div class="detail-avatar"></div>
+                <div>
+                  <div class="name">김익용한국</div>
+                  <div class="id">#US.AGV274</div>
+                  <div class="status bg-active">Active</div>
+                </div>
+                <img
+                  class="img1st"
+                  src="../../assets/images/top-detail-icon.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <img
+                  class="img2nd"
+                  src="../../assets/images/top-detail-icon2.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+              </div>
+
+              <div class="row row-cols-2">
+                <div class="col col-6">
+                  <label for="storeName">Store Name</label>
+                  <input
+                    type="text"
+                    id="storeName"
+                    name="storeName"
+                    value="김익용한국"
+                  />
+                </div>
+                <div class="col col-6">
+                  <label for="shopEmail">Shop email</label>
+                  <input
+                    type="email"
+                    id="shopEmail"
+                    name="shopEmail"
+                    value="kimiko@gmail.com"
+                  />
+                </div>
+                <div class="col col-6">
+                  <span class="label-name">Store Hotline</span>
+                  <div class="label-in-input">
+                    <label for="storeHotline">+84</label>
+                    <input
+                      type="tel"
+                      id="storeHotline"
+                      name="storeHotline"
+                      pattern="[0][0-9]{9}"
+                      value="0109766086"
+                    />
+                  </div>
+                </div>
+                <div class="col col-12">
+                  <label for="storeDescription">Store Description</label>
+
+                  <textarea
+                    id="storeDescription"
+                    name="storeDescription"
+                    rows="4"
+                    cols="50"
+                  >
+establishment that specializes in serving traditional and contemporary Korean cuisine. Known for its emphasis on fresh ingredients, distinct flavors, and a balance of various food groups, Korean restaurants offer a wide array of dishes. These include bibimbap (a mixed rice dish), kimchi (fermented vegetables), bulgogi (marinated beef barbecue).
+                    </textarea
+                  >
+                </div>
+
+                <div class="col col-6">
+                    <span class="label-name">Store Location</span>
+                    <div class="label-in-input">
+                      <label for="storeLocationLat">Lat</label>
+                      <input
+                        type="text"
+                        id="storeLocationLat"
+                        name="storeLocationLat"
+                        value="104958.18258125"
+                      />
+                    </div>
+                </div>
+
+                <div class="col col-6">
+                    <span class="label-name"></span>
+                    <div class="label-in-input storeLocationLong">
+                      <label for="storeLocationLong">Long</label>
+                      <input
+                        type="text"
+                        id="storeLocationLong"
+                        name="storeLocationLong"
+                        value="1292158.1254566"
+                      />
+                    </div>
+                </div>
+
+                <div class="col col-12">
+                    <span class="label-name">Store Address</span>
+                    <div class="label-in-input">
+                      <label for="storeAddress">Vietnam</label>
+                      <input
+                        type="text"
+                        id="storeAddress"
+                        name="storeAddress"
+                        value="19-21 Tân Cảng, P.25, Q.Bình Thạnh, TP. Hồ Chí Minh"
+                      />
+                    </div>
+                </div>
+
+                <div class="col col-6" style="width: 100%">
+                  <label for="currency">Currency</label><br />
+                  <input
+                    type="text"
+                    id="currency"
+                    name="currency"
+                    value="Korea Won"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="paymentMethod">Payment Method</label>
+                  <input
+                    type="text"
+                    id="paymentMethod"
+                    name="paymentMethod"
+                    value="하나은행"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="deliveryMethod">Delivery Method</label>
+                  <input
+                    type="text"
+                    id="deliveryMethod"
+                    name="deliveryMethod"
+                    value="CJ택배"
+                  />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-4 box">
+                  <div class="title-detail">Products</div>
+                  <div class="quantity-detail">156</div>
+                </div>
+                <div class="col col-4 box">
+                  <div class="title-detail">Catalogs</div>
+                  <div class="quantity-detail">14</div>
+                </div>
+                <div class="col col-4 box">
+                  <div class="title-detail">Orders</div>
+                  <div class="quantity-detail">59</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-container col2">
+              <div class="row row-cols-2">
+                <div class="col col-6">
+                  <label for="userID">User ID</label>
+                  <input
+                    type="text"
+                    id="userID"
+                    name="userID"
+                    value="#US.AGV274"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    value="김익용"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="userEmail">User Email</label>
+                  <input
+                    type="email"
+                    id="userEmail"
+                    name="userEmail"
+                    value="fremd@gmail.com"
+                  />
+                </div>
+                <div class="col col-6">
+                  <span class="label-name">Phone Number</span>
+                  <div class="label-in-input">
+                    <label for="phoneNumber">+84</label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      pattern="[0][0-9]{9}"
+                      value="0334542911"
+                    />
+                  </div>
+                </div>
+                
+                <div class="col col-6">
+                  <label for="joinedDate">Joined Date</label>
+                  <input
+                    type="date"
+                    id="joinedDate"
+                    name="joinedDate"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="status">Status</label>
+                  <input
+                    type="text"
+                    id="status"
+                    name="status"
+                    value="Active"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="businessCountry">Business Country</label>
+                  <input
+                    type="text"
+                    id="businessCountry"
+                    name="businessCountry"
+                    value="Korea"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="additionalBusinessCountry">Additional Business Country</label>
+                  <input
+                    type="text"
+                    id="additionalBusinessCountry"
+                    name="additionalBusinessCountry"
+                    value="Vietnam"
+                  />
+                </div>
+
+                <div class="col col-6 storage">
+                  <div class="title-detail">Storage</div>
+                  <div class="quantity-detail">180</div>
+                  <span>KB</span>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="sponsor">Sponsor</label> <br>
+                  <select name="sponsor" id="sponsor">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="sponsorDate">Sponsor Date</label>
+                  <input
+                    type="date"
+                    id="sponsorDate"
+                    name="sponsorDate"
+                  />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="sharableCatalog">Sharable Catalog</label> <br>
+                  <select name="sharableCatalog" id="sharableCatalog">
+                    <option value="available">Available</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="sharableCatalogQuantity">Sharable Catalog Quantity</label>
+                  <input
+                    type="number"
+                    id="sharableCatalogQuantity"
+                    name="sharableCatalogQuantity"
+                    value="7"
+                  />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="businessModel">Business Model</label> <br>
+                  <select name="businessModel" id="businessModel">
+                    <option value="basic">Basic</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="woocommerceUsage">Woocommerce Usage</label> <br>
+                  <select name="woocommerceUsage" id="woocommerceUsage">
+                    <option value="active">Active</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="col col-12">
+                  <label for="woocommerceURL">Woocommerce URL</label>
+                  <input
+                    type="text"
+                    id="woocommerceURL"
+                    name="woocommerceURL"
+                    placeholder="Enter here"
+                  />
+                </div>
+
+                <div class="col col-12">
+                  <label for="woocommerceConsumerKey">Woocommerce Consumer Key</label>
+                  <input
+                    type="text"
+                    id="woocommerceConsumerKey"
+                    name="woocommerceConsumerKey"
+                    placeholder="Enter here"
+                  />
+                </div>
+
+                <div class="col col-12">
+                  <label for="woocommerceConsumerSecret">Woocommerce Consumer Secret</label>
+                  <input
+                    type="text"
+                    id="woocommerceConsumerSecret"
+                    name="woocommerceConsumerSecret"
+                    placeholder="Enter here"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-container col3">
+              <div class="row row-cols-2">
+
+                <div class="col col-12 title">POS Integration</div>
+
+                <div class="col col-6">
+                  <label for="posUsage">POS Usage</label> <br>
+                  <select name="posUsage" id="posUsage">
+                    <option value="active">Active</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="selectPOSVendor">Select POS Vendor</label> <br>
+                  <select name="selectPOSVendor" id="selectPOSVendor">
+                    <option value="loyverse">Loyverse</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="col col-12">
+                  <label for="accessToken">Access Token</label>
+                  <input
+                    type="text"
+                    id="accessToken"
+                    name="accessToken"
+                    placeholder="Enter here"
+                  />
+                </div>
+
+                <div class="col col-12">
+                  <label for="merchantID">Merchant ID</label>
+                  <input
+                    type="text"
+                    id="merchantID"
+                    name="merchantID"
+                    placeholder="Enter here"
+                  />
+                </div>
+
+                <div class="col col-12">
+                  <label for="storeID">Store ID</label>
+                  <input
+                    type="text"
+                    id="storeID"
+                    name="storeID"
+                    placeholder="Enter here"
+                  />
+                </div>
+
+                <div class="col col-12">
+                  <label for="paymentTypeID">Payment Type ID</label>
+                  <input
+                    type="text"
+                    id="paymentTypeID"
+                    name="paymentTypeID"
+                    placeholder="Enter here"
+                  />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-12 title">API Account</div>
+
+                <div class="col col-6">
+                  <label for="userEmail">User Email</label>
+                  <input
+                    type="email"
+                    id="userEmail"
+                    name="userEmail"
+                    value="fremd@gmail.com"
+                  />
+                </div>
+                <div class="col col-6">
+                  <span class="label-name">Phone Number</span>
+                  <div class="label-in-input">
+                    <label for="phoneNumber">+84</label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      pattern="[0][0-9]{9}"
+                      value="0334542911"
+                    />
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label for="domain">Domain</label>
+                  <input
+                    type="text"
+                    id="domain"
+                    name="domain"
+                    value="https://www.amoeba.com"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="serverIP">Server IP</label>
+                  <input
+                    type="text"
+                    id="serverIP"
+                    name="serverIP"
+                    value="145.45.24.119"
+                  />
+                </div>
+                
+                <div class="col col-12 JWT-Token">
+                  <span>API account created successfully.</span><br>
+                  <br>
+                  <span>
+                    JWT Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhbWItb3JkZXIiLCJzdWIiOiIxODQiLCJlbWFpbCI6ImZyZW1kQG5hdmVyLmNvbSIsInBob25lIjoiKzg0ODEyMzAxOTA0IiwiaWF0IjoxNzIyOTM4NzY2fQ.-9SUUFPQNIqwrJmi6ET9mLudq4jkdyibCtt8YB7AUFo
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Content -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

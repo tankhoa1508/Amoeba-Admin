@@ -1,0 +1,20 @@
+
+/* Sidebar Navigation */
+
+.users .sidebar-nav__link img.active {
+    display: block;
+  }
+
+  .users .sidebar-nav__link img.non-active {
+    display: none;
+  }
+
+
+
+/* End Sidebar */
+
+
+/* Header */
+
+
+/* End Header */

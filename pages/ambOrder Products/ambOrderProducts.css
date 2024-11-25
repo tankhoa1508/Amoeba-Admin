@@ -1,0 +1,34 @@
+/* Sidebar Navigation */
+
+.products .sidebar-nav__link img.active {
+    display: block;
+  }
+
+  .products .sidebar-nav__link img.non-active {
+    display: none;
+  }
+
+
+
+/* End Sidebar */
+
+
+/* Header */
+
+
+/* End Header */
+
+/* Detail List Item */
+.mainContent .col-container .box {
+  height: 73px;
+}
+
+.mainContent .col-container .box .title-detail {
+  margin: 13px 0 0 4px;
+}
+
+.mainContent .col-container .box .quantity-detail {
+  font-size: 24px;
+  margin-left: 3px;
+}
+/* End Detail List Item */

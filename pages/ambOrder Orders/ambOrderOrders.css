@@ -1,0 +1,78 @@
+/* Sidebar Navigation */
+
+.orders .sidebar-nav__link img.active {
+  display: block;
+}
+
+.orders .sidebar-nav__link img.non-active {
+  display: none;
+}
+
+/* End Sidebar */
+
+/* Header */
+
+/* End Header */
+
+/* Detail List Item */
+.mainContent .col-container .box {
+  height: 73px;
+}
+
+.mainContent .col-container .box .title-detail {
+  margin: 13px 0 0 4px;
+}
+
+.mainContent .col-container .box .quantity-detail {
+  font-size: 24px;
+  margin-left: 3px;
+}
+
+/* Product List */
+.mainContent .col-container .product-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.mainContent .col-container .product-card .body {
+  position: relative;
+  width: 100%;
+}
+
+.mainContent .col-container .product-card .body .total-price {
+  position: absolute;
+  right: -20px;
+}
+
+.mainContent .col-container .product-card .card-img {
+  width: auto;
+  margin-right: 16px;
+}
+
+.mainContent .col-container .product-card .quantity {
+  margin-left: 24px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mainContent .col-container .subTotal,
+.mainContent .col-container .deliveryFee,
+.mainContent .col-container .total {
+  position: relative;
+  font-family: BOLD;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.mainContent .col-container .subTotal .subTotal-price,
+.mainContent .col-container .deliveryFee .deliveryFee-price,
+.mainContent .col-container .total .total {
+  position: absolute;
+  right: 17px;
+  color: red;
+}
+
+/* End Product List */
+/* End Detail List Item */
