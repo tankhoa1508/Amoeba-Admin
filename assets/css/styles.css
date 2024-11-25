@@ -35,7 +35,7 @@
   --completed: #007aff;
   --canceled: #ff3b30;
   --scheduled: #af52de;
-  --draft: #FFCC00;
+  --draft: #ffcc00;
 }
 
 * {
@@ -287,7 +287,7 @@ body {
 .noti-dropdown-content {
   display: none;
   position: absolute;
-  right: 15%;
+  right: 2%;
   background-color: #f9f9f9;
   min-width: 140px;
   max-width: 300px;
@@ -336,7 +336,7 @@ body {
 .language-dropdown-content {
   display: none;
   position: absolute;
-  right: 13%;
+  right: 2%;
   background-color: #f9f9f9;
   min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -1243,6 +1243,53 @@ div.dt-container div.dt-layout-full > *:only-child {
 .mainContent .col-container .product-card .body .status {
   font-size: 12px;
 }
+
+/* Upload file */
+.mainContent .col-container .upload-popups-input {
+  display: none;
+}
+
+.mainContent .col-container .upload-popups {
+  position: relative;
+}
+
+.mainContent .col-container .upload-popups-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+}
+
+.mainContent .col-container .upload-popups #profile-pic {
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.mainContent .col-container .upload-popups-label #profile-pic:hover {
+  border: 1px solid var(--primary);
+}
+
+.mainContent .col-container .upload-popups-label .img-text {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.mainContent .col-container .upload-popups-label .text {
+  font-family: BOLD;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 14.32px;
+  color: var(--dark-orange);
+  width: 100%;
+  text-align: center;
+}
+
+/* End Upload file */
 
 /* End product list */
 

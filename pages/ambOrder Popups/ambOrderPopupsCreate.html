@@ -133,7 +133,9 @@
             <img src="../../assets/images/back-icon.svg" alt="" />
           </a>
 
-          <button class="btn-create">Create</button>
+          <a href="./ambOrderPopups.html">
+            <button class="btn-create">Create</button>
+          </a>
         </div>
 
         <div class="detail-container">
@@ -267,17 +269,25 @@
               <div class="row">
                 <div class="col col-12 title">Media</div>
 
-                <img
-                  src="../../assets/images/popups-img-detail.png"
-                  class="popups-img-detail"
-                  alt=""
-                />
+                <div class="upload-popups">
+                    <img src="../../assets/images/default-popup.png" width="458" height="813" id="profile-pic" />
+                    <label class="upload-popups-label" for="upload-popups">
+                            <img
+                            class="img-text"
+                            src="../../assets/images/upload-icon.svg"
+                            alt=""
+                            />
+                            <p class="text">Upload Popup media</p>
+                    </label>
+                    <input type="file" id="upload-popups" class="upload-popups-input" accept="image/*"/>
+                </div>
 
                 <div class="btn-list">
-                  <button class="btn-change">Change</button>
+                  <label class="btn-change non-active" for="upload-popups">Change</label>
+                  <!-- <button class="btn-change">Change</button> -->
                   <button class="btn btn-kr float-end">kr</button>
                   <button class="btn btn-en float-end">en</button>
-                  <button class="btn btn-vn float-end">vn</button>
+                  <button class="btn btn-vn float-end" autofocus>vn</button>
                 </div>
               </div>
             </div>
@@ -295,6 +305,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
+     <script src="./ambOrderPopups.js"></script>
     <script src="../../assets/js/main.js"></script>
   </body>
 </html>

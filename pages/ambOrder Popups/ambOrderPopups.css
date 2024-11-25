@@ -34,6 +34,16 @@
   color: #32ade6;
 }
 
+.mainContent .col-container .non-active {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.mainContent .col-container .btn-change.active {
+  pointer-events:all ;
+  opacity: 1;
+}
+
 .mainContent .col-container .btn-list .btn-change:hover {
   background-color: #32ade6;
   color: #fff;
@@ -52,6 +62,7 @@
   font-weight: 800;
   line-height: 16.71px;
 }
+
 
 .mainContent .col-container .btn-list .btn:hover,
 .mainContent .col-container .btn-list .btn:focus {
