@@ -33,6 +33,7 @@
   --open: #34c759;
   --pick-upWaiting: #32ade6;
   --completed: #007aff;
+  --solved: #007aff;
   --canceled: #ff3b30;
   --scheduled: #af52de;
   --draft: #ffcc00;
@@ -46,6 +47,10 @@
 
 .bg-active {
   background-color: var(--active);
+}
+
+.bg-solved {
+  background-color: var(--solved);
 }
 
 .bg-draft {
@@ -562,7 +567,7 @@ div.dt-container div.dt-search input {
   text-align: center;
   background: #f8f8f8;
   color: #b6b6b6;
-  margin-left: 7px;
+  /* margin-left: 7px; */
 }
 
 .mainContent table.dataTable th,
@@ -582,6 +587,8 @@ div.dt-container div.dt-search input {
   text-align: center;
 }
 
+
+/* Xử lý bỏ icon sort */
 .mainContent table.dataTable thead > tr > .th-userID span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-phone span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-store span.dt-column-order,
@@ -617,9 +624,32 @@ div.dt-container div.dt-search input {
 .mainContent table.dataTable thead > tr > .th-notificationTitle span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-typeAlert span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-loop span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-sendDate span.dt-column-order
+.mainContent table.dataTable thead > tr > .th-sendDate span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-messageID span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-message span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-shopName span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-shopEmail span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-openDate span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-solveDate span.dt-column-order
 {
   display: none;
+}
+
+/* Xử lý tràn text */
+.mainContent table.dataTable > tbody > tr td.text-over {
+  display: -webkit-box;
+  	-webkit-line-clamp: 1;  
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+    white-space: nowrap;
+} 
+
+.mainContent table.dataTable > tbody > tr td a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .mainContent table.dataTable thead > tr > .th-status {
@@ -637,10 +667,6 @@ div.dt-container div.dt-search input {
 
 .mainContent table.dataTable > tbody > tr td.link {
   text-decoration: underline;
-}
-
-.mainContent table.dataTable .users td {
-  padding-left: 15px;
 }
 
 .mainContent table.dataTable td:first-child {
@@ -712,7 +738,8 @@ div.dt-container div.dt-layout-full > *:only-child {
 .mainContent table.dataTable .completed,
 .mainContent table.dataTable .canceled,
 .mainContent table.dataTable .open,
-.mainContent table.dataTable .scheduled {
+.mainContent table.dataTable .scheduled,
+.mainContent table.dataTable .solved  {
   font-family: BOLD;
   /* font-size: 12px; */
   font-weight: 800;
