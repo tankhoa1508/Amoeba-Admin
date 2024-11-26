@@ -608,7 +608,17 @@ div.dt-container div.dt-search input {
 .mainContent table.dataTable thead > tr > .th-popupTitle span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-index span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-linkTo span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-duration span.dt-column-order {
+.mainContent table.dataTable thead > tr > .th-duration span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-reportID span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-reportQuantity span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-reason span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-latestDate span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-notificationID span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-notificationTitle span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-typeAlert span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-loop span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-sendDate span.dt-column-order
+{
   display: none;
 }
 
@@ -1064,13 +1074,25 @@ div.dt-container div.dt-layout-full > *:only-child {
 
 .mainContent .detail-container .top-col img {
   position: absolute;
-  right: 48px;
   margin-top: 24px;
   cursor: pointer;
+  opacity: 0.8;
+}
+
+.mainContent .detail-container .top-col img:hover {
+  opacity: 1;
+}
+
+.mainContent .detail-container .top-col .img1st {
+  right: 48px;
+}
+
+.mainContent .detail-container .top-col .img3rd {
+  margin-top: 32px;
+  right: 56px;
 }
 
 .mainContent .detail-container .top-col .img2nd {
-  position: absolute;
   right: 0;
 }
 

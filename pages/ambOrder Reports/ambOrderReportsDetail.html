@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amoeba Admin</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="./ambOrderReports.css" />
+  </head>
+  <body>
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+      <div class="wrapper sidebar-wrapper">
+        <div class="logo">
+          <a href="../ambOrder/ambOrder.html">
+            <img
+              src="../../assets/images/logo-amoeba.png"
+              alt=""
+              width="33.53"
+              height="38"
+            />
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list leftSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Left Sidebar Navigation -->
+
+    <!-- Right Sidebar Navigation -->
+    <div class="sidebar sidebar2">
+      <div class="wrapper sidebar-wrapper">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list rightSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Right Sidebar Navigation -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <div class="name-page">ambOrder Reports</div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <div class="subsearch-container">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-nav__subsearch"
+                />
+                <img
+                  src="../../assets/images/search-icon.svg"
+                  class="subsearch-icon"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="noti-dropdown">
+                <button class="noti-dropbtn" onclick="notiDropdown()">
+                  <img
+                    src="../../assets/images/noti-header.svg"
+                    class="noti-header"
+                    alt=""
+                  />
+                  <img
+                    src="../../assets/images/noti-mark-header.svg"
+                    class="noti-mark-header"
+                    alt=""
+                  />
+                </button>
+                <div class="noti-dropdown-content" id="noti-Dropdown">
+                  <a href="#">Lorem ipsum dolor sit amet.</a>
+                  <a href="#">Lorem, ipsum dolor.</a>
+                  <a href="#"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus, reiciendis.</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="language-dropdown">
+                <button class="language-dropbtn" onclick="languageDropdown()">
+                  <img
+                    src="../../assets/images/language.svg"
+                    class="language-header"
+                    alt=""
+                  />
+                </button>
+                <div class="language-dropdown-content" id="language-Dropdown">
+                  <a href="#">English</a>
+                  <a href="#">Vietnamese</a>
+                  <a href="#">Korean</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <img
+                src="../../assets/images/avatar.png"
+                class="avatar-header"
+                alt=""
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <section class="mainContent">
+      <div class="mainContent__container">
+        <div class="top-elements">
+          <a href="./ambOrderReports.html">
+            <img src="../../assets/images/back-icon.svg" alt="" />
+          </a>
+
+          <a href="./ambOrderReports.html">
+            <button class="btn-save">Save</button>
+          </a>
+        </div>
+
+        <div class="detail-container">
+          <div class="row row-container">
+            <div class="col col-container">
+              <div class="top-col">
+                <div class="detail-avatar"></div>
+                <div>
+                  <div class="name">Report #145</div>
+                  <div class="id">#RP.AGV274</div>
+                  <div class="status bg-completed">Completed</div>
+                </div>
+                <img
+                  class="img1st"
+                  src="../../assets/images/top-detail-icon3.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <img
+                  class="img3rd"
+                  src="../../assets/images/top-detail-icon3-1.png"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
+                <img
+                  class="img2nd"
+                  src="../../assets/images/top-detail-icon2.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+              </div>
+
+              <div class="row row-cols-2">
+                <div class="col col-6">
+                  <label for="reportID">Report ID</label>
+                  <input
+                    type="text"
+                    id="reportID"
+                    name="reportID"
+                    value="#RP.AGV274"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="openDate">Open Date</label> <br />
+                  <input type="date" id="openDate" name="openDate" />
+                </div>
+
+                <div class="col col-6">
+                  <label for="catalogID">Catalog ID</label>
+                  <input
+                    type="text"
+                    id="catalogID"
+                    name="catalogID"
+                    value="#CT.AGV274"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="userID">User ID</label>
+                  <input
+                    type="text"
+                    id="userID"
+                    name="userID"
+                    value="#US.AGV274"
+                  />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="reportQuantity">Report Quantity</label>
+                  <input
+                    type="text"
+                    id="reportQuantity"
+                    name="reportQuantity"
+                    value="28"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="status">Status</label> <br />
+                  <select name="status" id="status">
+                    <option value="open">Open</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                
+              </div>
+            </div>
+
+            <div class="col col-container col2">
+              <div class="row">
+                <div class="col col-12 title">Report Reason</div>
+
+                <div class="col col-6">
+                  <label for="reason1">Reasons</label>
+                  <input
+                    type="text"
+                    id="reason1"
+                    name="reason1"
+                    value="Reason 1"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="quantity1">Quantity</label>
+                  <input
+                    type="text"
+                    id="quantity1"
+                    name="quantity1"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason2"
+                    name="reason2"
+                    value="Reason 2"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity2"
+                    name="quantity2"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason3"
+                    name="reason3"
+                    value="Reason 3"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity3"
+                    name="quantity3"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason4"
+                    name="reason4"
+                    value="Reason 4"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity4"
+                    name="quantity4"
+                    value="8"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason5"
+                    name="reason5"
+                    value="Reason 5"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity5"
+                    name="quantity5"
+                    value="12"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason6"
+                    name="reason6"
+                    value="Reason 6"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity6"
+                    name="quantity6"
+                    value="4"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason7"
+                    name="reason7"
+                    value="Reason 7"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity7"
+                    name="quantity7"
+                    value="4"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason8"
+                    name="reason8"
+                    value="Reason 8"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity8"
+                    name="quantity8"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason9"
+                    name="reason9"
+                    value="Reason 9"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity9"
+                    name="quantity9"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason10"
+                    name="reason10"
+                    value="Reason 10"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity10"
+                    name="quantity10"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason11"
+                    name="reason11"
+                    value="Reason 11"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity11"
+                    name="quantity11"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason12"
+                    name="reason12"
+                    value="Reason 12"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity12"
+                    name="quantity12"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason13"
+                    name="reason13"
+                    value="Reason 13"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity13"
+                    name="quantity13"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason14"
+                    name="reason14"
+                    value="Reason 14"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity14"
+                    name="quantity14"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason15"
+                    name="reason15"
+                    value="Reason 15"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity15"
+                    name="quantity15"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason16"
+                    name="reason16"
+                    value="Reason 16"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity16"
+                    name="quantity16"
+                    value="0"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="reason17"
+                    name="reason17"
+                    value="Reason 17"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="quantity17"
+                    name="quantity17"
+                    value="0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Content -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
+     <script src="./ambOrderReports.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

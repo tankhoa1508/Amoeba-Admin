@@ -550,7 +550,7 @@ let usersCourses = [
 
 // Users courses table
 const _tbodyUsers = $("tbody.users");
-const result7 = usersCourses.map(function (item) {
+const usersList = usersCourses.map(function (item) {
   _tbodyUsers.append(
     `
       <tr>

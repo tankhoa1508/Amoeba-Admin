@@ -40,7 +40,7 @@ let ambOrderControlBoardCourses = [
       text: "ambOrder Notifications",
       icon: "notificationsBold.svg",
       class: "notifications",
-      href: "../ambOrder Notifications/ambOrderNotifications.html",
+      href: "../ambOrder Alerts/ambOrderAlerts.html",
     },
     {
       text: "ambOrder Contents",
