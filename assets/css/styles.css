@@ -625,6 +625,10 @@ div.dt-container div.dt-search input {
   border-style: none;
 }
 
+.mainContent table.dataTable > tbody > tr td.link {
+  text-decoration: underline;
+}
+
 .mainContent table.dataTable .users td {
   padding-left: 15px;
 }
@@ -677,6 +681,11 @@ table.dataTable thead > tr > td.dt-orderable-desc {
   background-color: #f8f8f8;
   border: none;
   margin-left: 7px;
+}
+
+div.dt-container div.dt-layout-full {
+  max-width: 1300px;
+  width: 100%;
 }
 
 div.dt-container div.dt-layout-full > *:only-child {
@@ -799,7 +808,7 @@ div.dt-container div.dt-layout-full > *:only-child {
   display: none;
 }
 
-.mainContent .mainContent__container .createPopup {
+.mainContent .mainContent__container .create-btn {
   color: #fff;
   font-family: BOLD;
   height: 39px;
@@ -816,7 +825,7 @@ div.dt-container div.dt-layout-full > *:only-child {
   top: 29px;
 }
 
-.mainContent .mainContent__container .createPopup:hover {
+.mainContent .mainContent__container .create-btn:hover {
   opacity: 1;
 }
 
@@ -1080,6 +1089,13 @@ div.dt-container div.dt-layout-full > *:only-child {
   line-height: 23.87px;
   color: #000000;
   margin-bottom: 6px;
+
+  	display: -webkit-box;
+    max-width: 276px;
+  	-webkit-line-clamp: 1;  /* số dòng hiển thị */
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
 }
 
 .mainContent .detail-container .top-col .id {
@@ -1245,15 +1261,15 @@ div.dt-container div.dt-layout-full > *:only-child {
 }
 
 /* Upload file */
-.mainContent .col-container .upload-popups-input {
+.mainContent .col-container .upload-input {
   display: none;
 }
 
-.mainContent .col-container .upload-popups {
+.mainContent .col-container .upload {
   position: relative;
 }
 
-.mainContent .col-container .upload-popups-label {
+.mainContent .col-container .upload-label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1265,21 +1281,21 @@ div.dt-container div.dt-layout-full > *:only-child {
   flex-wrap: wrap;
 }
 
-.mainContent .col-container .upload-popups #profile-pic {
+.mainContent .col-container .upload #profile-pic {
   margin-top: 4px;
   margin-bottom: 16px;
 }
 
-.mainContent .col-container .upload-popups-label #profile-pic:hover {
+.mainContent .col-container .upload-label #profile-pic:hover {
   border: 1px solid var(--primary);
 }
 
-.mainContent .col-container .upload-popups-label .img-text {
+.mainContent .col-container .upload-label .img-text {
   margin: 0 auto;
   margin-bottom: 16px;
 }
 
-.mainContent .col-container .upload-popups-label .text {
+.mainContent .col-container .upload-label .text {
   font-family: BOLD;
   font-size: 12px;
   font-weight: 800;

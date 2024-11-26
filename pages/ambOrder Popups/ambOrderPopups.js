@@ -674,7 +674,7 @@ let popupsCourses = [
   },
 ];
 
-// Products courses table
+// Popups courses table
 const _tbodyPopups = $("tbody.popups");
 const popupsList = popupsCourses.map(function (item) {
   _tbodyPopups.append(
@@ -725,11 +725,11 @@ const popupsList = popupsCourses.map(function (item) {
 });
 
 let profilePic = document.getElementById("profile-pic");
-let inputFile = document.getElementById("upload-popups");
+let inputFile = document.getElementById("upload");
 
 inputFile.onchange = function () {
   profilePic.src = URL.createObjectURL(inputFile.files[0]);
-  document.querySelector(".upload-popups-label").style.display = "none";
+  document.querySelector(".upload-label").style.display = "none";
   document.querySelector(".btn-change").classList.remove("non-active");
   document.querySelector(".btn-change").classList.add("active");
 };

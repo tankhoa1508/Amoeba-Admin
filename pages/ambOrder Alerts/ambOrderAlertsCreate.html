@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
-    <link rel="stylesheet" href="./ambOrderPopups.css" />
+    <link rel="stylesheet" href="./ambOrderAlerts.css" />
   </head>
   <body>
     <!-- Left Sidebar Navigation -->
@@ -55,7 +55,7 @@
     <!-- Header -->
     <header class="header">
       <div class="wrapper header-wrapper">
-        <div class="name-page">ambOrder Popups</div>
+        <div class="name-page">ambOrder Alerts</div>
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -129,11 +129,11 @@
     <section class="mainContent">
       <div class="mainContent__container">
         <div class="top-elements">
-          <a href="./ambOrderPopups.html">
+          <a href="./ambOrderAlerts.html">
             <img src="../../assets/images/back-icon.svg" alt="" />
           </a>
 
-          <a href="./ambOrderPopups.html">
+          <a href="./ambOrderAlerts.html">
             <button class="btn-create">Create</button>
           </a>
         </div>
@@ -144,8 +144,8 @@
               <div class="top-col">
                 <div class="detail-avatar"></div>
                 <div>
-                  <div class="name">Beginner - Download Samp...</div>
-                  <div class="id">#PU.AGV274</div>
+                  <div class="name">Notification Title</div>
+                  <div class="id">#NO.AGV274</div>
                   <div class="status bg-draft">Draft</div>
                 </div>
                 <img
@@ -166,43 +166,35 @@
 
               <div class="row row-cols-2">
                 <div class="col col-6">
-                  <label for="popupID">Popup ID</label>
+                  <label for="notificationID">Notification ID</label>
                   <input
                     type="text"
-                    id="popupID"
-                    name="popupID"
-                    value="#OR.AGV274"
+                    id="notificationID"
+                    name="notificationID"
+                    value="#NO.AGV274"
                   />
                 </div>
 
                 <div class="col col-6">
-                  <label for="popupType">Popup Type</label> <br />
-                  <select name="popupType" id="popupType">
+                  <label for="notificationType">Notification Type</label> <br />
+                  <select name="notificationType" id="notificationType">
                     <option value="sampleDownload">Sample Download</option>
                     <option value="no">No</option>
                   </select>
                 </div>
 
                 <div class="col col-12">
-                  <label for="popupTitle">Popup Title</label>
+                  <label for="notificationTitle">Notification Title</label>
                   <input
                     type="text"
-                    id="popupTitle"
-                    name="popupTitle"
+                    id="notificationTitle"
+                    name="notificationTitle"
                     placeholder="Enter here"
                     value=""
                   />
                 </div>
 
-                <div class="col col-6">
-                  <label for="index">Index</label> <br />
-                  <select name="index" id="index">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-                </div>
-
-                <div class="col col-6">
+                <div class="col col-6" style="width: 100%">
                   <label for="linkTo">Link To</label> <br />
                   <select name="linkTo" id="linkTo">
                     <option value="internal">Internal</option>
@@ -214,7 +206,7 @@
                   <label for="destination">Destination</label> <br />
                   <select name="destination" id="destination">
                     <option value="amoebaShare">Amoeba Share</option>
-                    <option value="no">No</option>
+                    <option value="2">2</option>
                   </select>
                 </div>
 
@@ -235,12 +227,12 @@
                 </div>
 
                 <div class="col col-6">
-                    <label for="status">Status</label> <br />
-                    <select name="status" id="status">
-                      <option value="draft">Draft</option>
-                      <option value="active">Active</option>
-                    </select>
-                  </div>
+                  <label for="loop">Loop</label> <br />
+                  <select name="loop" id="loop">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
 
                 <div class="col col-6">
                   <label for="startDate">Start Date</label>
@@ -267,23 +259,52 @@
 
             <div class="col col-container col2">
               <div class="row">
-                <div class="col col-12 title">Media</div>
+                <div class="col col-12 title">Content</div>
 
                 <div class="upload">
-                    <img src="../../assets/images/default-popup.png" width="458" height="813" id="profile-pic" />
-                    <label class="upload-label" for="upload">
-                            <img
-                            class="img-text"
-                            src="../../assets/images/upload-icon.svg"
-                            alt=""
-                            />
-                            <p class="text">Upload Popup media</p>
-                    </label>
-                    <input type="file" id="upload" class="upload-input" accept="image/*"/>
+                  <img
+                    src="../../assets/images/default-popup.png"
+                    width="458"
+                    height="320"
+                    id="profile-pic"
+                  />
+
+                  <label class="upload-label" for="upload">
+                    <img
+                      class="img-text"
+                      src="../../assets/images/upload-icon.svg"
+                      alt=""
+                    />
+                    <p class="text">Upload Popup media</p>
+                  </label>
+
+                  <input
+                    type="file"
+                    id="upload"
+                    class="upload-input"
+                    accept="image/*"
+                  />
                 </div>
 
                 <div class="btn-list">
-                  <label class="btn-change non-active" for="upload">Change</label>
+                  <label class="btn-change non-active" for="upload"
+                    >Change</label
+                  >
+                  <button class="btn btn-kr float-end">kr</button>
+                  <button class="btn btn-en float-end">en</button>
+                  <button class="btn btn-vn float-end" autofocus>vn</button>
+                </div>
+
+                <div class="col col-12">
+                  <label for="content">Content</label>
+
+                  <textarea id="content" name="content" rows="4" cols="50">
+Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury
+                    </textarea
+                  >
+                </div>
+
+                <div class="btn-list">
                   <button class="btn btn-kr float-end">kr</button>
                   <button class="btn btn-en float-end">en</button>
                   <button class="btn btn-vn float-end" autofocus>vn</button>
@@ -304,7 +325,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
-     <script src="./ambOrderPopups.js"></script>
+    <script src="./ambOrderAlerts.js"></script>
     <script src="../../assets/js/main.js"></script>
   </body>
 </html>

@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
-    <link rel="stylesheet" href="./ambOrderPopups.css">
+    <link rel="stylesheet" href="./ambOrderAlerts.css">
 </head>
 <body>
     <!-- Left Sidebar Navigation -->
@@ -50,7 +50,7 @@
     <header class="header">
         <div class="wrapper header-wrapper">
             <div class="name-page">
-                ambOrder Popups
+                ambOrder Alerts
             </div>
             <nav class="header-nav">
                 <ul class="header-nav__list">
@@ -98,23 +98,23 @@
     <!-- Main Content -->
      <section class="mainContent">
         <div class="mainContent__container">
-            <a href="./ambOrderPopupsCreate.html" class="create-btn">Create new Popup</a>
+            <a href="./ambOrderAlertsCreate.html" class="create-btn">Create new Notification</a>
             <!-- table -->
             <img src="../../assets/images/search-icon.svg" class="search-icon" alt="">
             <table class="table" class="table table-striped">
                 <thead>
                     <tr>
-                        <th class="th-popupID">Popup ID</th>
-                        <th class="th-popupTitle">Popup Title</th>
-                        <th class="th-index">Index</th>
+                        <th class="th-notificationID">Notification ID</th>
+                        <th class="th-notificationTitle">Notification Title</th>
                         <th class="th-type">Type</th>
                         <th class="th-linkTo">Link To</th>
+                        <th class="th-loop">Loop</th>
                         <th class="th-createdDate">Created Date</th>
-                        <th class="th-duration">Duration</th>
+                        <th class="th-sendDate">Send Date</th>
                         <th class="th-status">Status</th>
                     </tr>
                 </thead>
-                <tbody class="popups">
+                <tbody class="alerts">
                     
                 </tbody>
             </table>
@@ -127,10 +127,8 @@
     <!-- End Main Content -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-    <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
-     <script src="./ambOrderPopups.js"></script>
+     <script src="./ambOrderAlerts.js"></script>
     <script src="../../assets/js/main.js"></script>
 </body>
 </html>

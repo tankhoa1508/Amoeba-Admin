@@ -16,9 +16,7 @@
 
 /* Main Content */
 /* Datatable */
-.mainContent table.dataTable > tbody > tr td.link {
-  text-decoration: underline;
-}
+
 
 /* Detail Column */
 .mainContent .col-container .box {
