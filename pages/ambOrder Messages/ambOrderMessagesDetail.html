@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
-    <link rel="stylesheet" href="./ambOrderReports.css" />
+    <link rel="stylesheet" href="./ambOrderMessages.css" />
   </head>
   <body>
     <!-- Left Sidebar Navigation -->
@@ -52,7 +52,7 @@
     <!-- Header -->
     <header class="header">
       <div class="wrapper header-wrapper">
-        <div class="name-page">ambOrder Reports</div>
+        <div class="name-page">ambOrder Messages</div>
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -126,11 +126,11 @@
     <section class="mainContent">
       <div class="mainContent__container">
         <div class="top-elements">
-          <a href="./ambOrderReports.html">
+          <a href="./ambOrderMessages.html">
             <img src="../../assets/images/back-icon.svg" alt="" />
           </a>
 
-          <a href="./ambOrderReports.html">
+          <a href="./ambOrderMessages.html">
             <button class="btn-save">Save</button>
           </a>
         </div>
@@ -141,24 +141,18 @@
               <div class="top-col">
                 <div class="detail-avatar"></div>
                 <div>
-                  <div class="name">Report #145</div>
-                  <div class="id">#RP.AGV274</div>
-                  <div class="status bg-completed">Completed</div>
+                  <div class="name">Message #145</div>
+                  <div class="id">#MS.AGV274</div>
+                  <div class="status bg-open">Open</div>
                 </div>
                 <img
                   class="img1st"
-                  src="../../assets/images/top-detail-icon3.png"
+                  src="../../assets/images/top-detail-icon.png"
                   width="40"
                   height="40"
                   alt=""
                 />
-                <img
-                  class="img3rd"
-                  src="../../assets/images/top-detail-icon3-1.png"
-                  width="24"
-                  height="24"
-                  alt=""
-                />
+                
                 <img
                   class="img2nd"
                   src="../../assets/images/top-detail-icon2.png"
@@ -170,29 +164,34 @@
 
               <div class="row row-cols-2">
                 <div class="col col-6">
-                  <label for="reportID">Report ID</label>
+                  <label for="messageID">Message ID</label>
                   <input
                     type="text"
-                    id="reportID"
-                    name="reportID"
-                    value="#RP.AGV274"
+                    id="messageID"
+                    name="messageID"
+                    value="#MS.AGV274"
                   />
                 </div>
 
                 <div class="col col-6">
-                  <label for="openDate">Open Date</label> <br />
+                  <label for="status">Status</label> 
+                  <select name="status" id="status">
+                    <option value="open">Open</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="openDate">Open Date</label> 
                   <input type="date" id="openDate" name="openDate" />
                 </div>
 
                 <div class="col col-6">
-                  <label for="catalogID">Catalog ID</label>
-                  <input
-                    type="text"
-                    id="catalogID"
-                    name="catalogID"
-                    value="#CT.AGV274"
-                  />
+                  <label for="solvedDate">Solved Date</label> 
+                  <input type="date" id="solvedDate" name="solvedDate" />
                 </div>
+
+                <div class="divider-list-item"></div>
 
                 <div class="col col-6">
                   <label for="userID">User ID</label>
@@ -204,340 +203,92 @@
                   />
                 </div>
 
-                <div class="divider-list-item"></div>
-
                 <div class="col col-6">
-                  <label for="reportQuantity">Report Quantity</label>
+                  <label for="fullName">Full Name</label>
                   <input
                     type="text"
-                    id="reportQuantity"
-                    name="reportQuantity"
-                    value="28"
+                    id="fullName"
+                    name="fullName"
+                    value="김익용"
                   />
                 </div>
 
                 <div class="col col-6">
-                  <label for="status">Status</label> <br />
-                  <select name="status" id="status">
-                    <option value="open">Open</option>
-                    <option value="no">No</option>
-                  </select>
+                  <label for="userEmail">User Email</label>
+                  <input
+                    type="email"
+                    id="userEmail"
+                    name="userEmail"
+                    value="fremd@gmail.com"
+                  />
+                </div>
+                <div class="col col-6">
+                  <span class="label-name">Phone Number</span>
+                  <div class="label-in-input">
+                    <label for="phoneNumber">+84</label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      pattern="[0][0-9]{9}"
+                      value="0334542911"
+                    />
+                  </div>
                 </div>
 
-                
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="shopName">Shop Name</label>
+                  <input
+                    type="text"
+                    id="shopName"
+                    name="shopName"
+                    value="김익용한국"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="shopEmail">Shop Email</label>
+                  <input
+                    type="email"
+                    id="shopEmail"
+                    name="shopEmail"
+                    value="kimoko299@gmail.com"
+                  />
+                </div>
+                <div class="col col-6">
+                  <span class="label-name">Shop Hotline</span>
+                  <div class="label-in-input">
+                    <label for="shopHotline">+82</label>
+                    <input
+                      type="tel"
+                      id="shopHotline"
+                      name="shopHotline"
+                      pattern="[0][0-9]{9}"
+                      value="1097660896"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="col col-container col2">
               <div class="row">
-                <div class="col col-12 title">Report Reason</div>
+                <div class="col col-12 title">Message Information</div>
 
-                <div class="col col-6">
-                  <label for="reason1">Reasons</label>
-                  <input
-                    type="text"
-                    id="reason1"
-                    name="reason1"
-                    value="Reason 1"
-                  />
-                </div>
+                <div class="col col-12">
+                  <label for="message">Message</label>
 
-                <div class="col col-6">
-                  <label for="quantity1">Quantity</label>
-                  <input
-                    type="text"
-                    id="quantity1"
-                    name="quantity1"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason2"
-                    name="reason2"
-                    value="Reason 2"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity2"
-                    name="quantity2"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason3"
-                    name="reason3"
-                    value="Reason 3"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity3"
-                    name="quantity3"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason4"
-                    name="reason4"
-                    value="Reason 4"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity4"
-                    name="quantity4"
-                    value="8"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason5"
-                    name="reason5"
-                    value="Reason 5"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity5"
-                    name="quantity5"
-                    value="12"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason6"
-                    name="reason6"
-                    value="Reason 6"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity6"
-                    name="quantity6"
-                    value="4"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason7"
-                    name="reason7"
-                    value="Reason 7"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity7"
-                    name="quantity7"
-                    value="4"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason8"
-                    name="reason8"
-                    value="Reason 8"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity8"
-                    name="quantity8"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason9"
-                    name="reason9"
-                    value="Reason 9"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity9"
-                    name="quantity9"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason10"
-                    name="reason10"
-                    value="Reason 10"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity10"
-                    name="quantity10"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason11"
-                    name="reason11"
-                    value="Reason 11"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity11"
-                    name="quantity11"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason12"
-                    name="reason12"
-                    value="Reason 12"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity12"
-                    name="quantity12"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason13"
-                    name="reason13"
-                    value="Reason 13"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity13"
-                    name="quantity13"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason14"
-                    name="reason14"
-                    value="Reason 14"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity14"
-                    name="quantity14"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason15"
-                    name="reason15"
-                    value="Reason 15"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity15"
-                    name="quantity15"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason16"
-                    name="reason16"
-                    value="Reason 16"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity16"
-                    name="quantity16"
-                    value="0"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="reason17"
-                    name="reason17"
-                    value="Reason 17"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <input
-                    type="text"
-                    id="quantity17"
-                    name="quantity17"
-                    value="0"
-                  />
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    cols="50"
+                  >
+establishment that specializes in serving traditional and contemporary Korean cuisine. Known for its emphasis on fresh ingredients, distinct flavors, and a balance of various food groups, Korean restaurants offer a wide array of dishes. These include bibimbap (a mixed rice dish), kimchi (fermented vegetables), bulgogi (marinated beef barbecue), and a variety of side dishes known as banchan.
+                    </textarea
+                  >
                 </div>
               </div>
             </div>

@@ -940,7 +940,7 @@ div.dt-container div.dt-layout-full > *:only-child {
 .mainContent .row-container .col-container {
   /* width: 489.67px; */
   max-width: 489.67px;
-  /* height: 925px; */
+  min-height: 925px;
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 0px 4px 24px 0px #00000014;
