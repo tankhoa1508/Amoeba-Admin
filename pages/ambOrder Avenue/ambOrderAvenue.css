@@ -1,0 +1,109 @@
+/* Sidebar Navigation */
+
+.avenue .sidebar-nav__link img.active {
+  display: block;
+}
+
+.avenue .sidebar-nav__link img.non-active {
+  display: none;
+}
+
+/* End Sidebar */
+
+/* Header */
+
+/* End Header */
+
+/* Main Content */
+/* Datatable */
+
+
+/* Detail Column */
+.mainContent .col-container .category-area ,
+  .mainContent .col-container .product-area {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.mainContent .col-container .category-area input#createNewCategory {
+  width: 409px;
+  margin-bottom: 16px;
+}
+
+.mainContent .col-container .category-area input.add-icon {
+  margin-left: 8px;
+  margin-bottom: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  opacity: 0.7;
+  padding: 0;
+}
+
+.mainContent .col-container .category-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.mainContent .col-container .category-list .category-item,
+.mainContent .col-container .category-item {
+  width: auto;
+  height: 29px;
+  padding: 6px 12px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #616161;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.mainContent .col-container .category-item .name {
+  font-family: BOLD;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 16.71px;
+  color: var(--text);
+}
+
+.mainContent .col-container .product-area .category-item:hover {
+  background-color: var(--text);
+  cursor: pointer;
+}
+
+.mainContent .col-container .category-area .category-item:hover {
+  background: rgba(253, 117, 19, 0.1);
+  border: 1px solid var(--primary);
+}
+
+.mainContent .col-container .product-area .category-item:hover .name {
+  color: #fff;
+}
+
+.mainContent .col-container .category-area .category-item:hover .name {
+  color: var(--dark-orange);
+}
+
+.mainContent .col-container .category-area input.close-icon {
+  width: 17px;
+  height: 17px;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.mainContent .col-container .category-area input[type="image"]:hover {
+  opacity: 1;
+}
+
+.mainContent .row-container .col3 .title {
+  margin-bottom: 12px;
+}
+
+/* End Main Content */

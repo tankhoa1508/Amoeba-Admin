@@ -676,7 +676,7 @@ let catalogsCourses = [
 
 // Catalogs courses table
 const _tbodyCatalogs = $("tbody.catalogs");
-const result9 = catalogsCourses.map(function (item) {
+const catalogsList = catalogsCourses.map(function (item) {
   _tbodyCatalogs.append(
     `
       <tr>

@@ -37,6 +37,7 @@
   --canceled: #ff3b30;
   --scheduled: #af52de;
   --draft: #ffcc00;
+  --waiting: #ffcc00;
 }
 
 * {
@@ -47,6 +48,10 @@
 
 .bg-active {
   background-color: var(--active);
+}
+
+.bg-waiting {
+  background-color: var(--waiting);
 }
 
 .bg-solved {
@@ -65,9 +70,12 @@
   background-color: var(--open);
 }
 
-.bg-canceled,
-.bg-blocked {
+.bg-canceled {
   background-color: var(--canceled);
+}
+
+.bg-blocked {
+  background-color: var(--blocked);
 }
 
 .bg-inactive {
@@ -99,7 +107,7 @@ body {
   background-color: #f8f8f8;
   /* max-width: 1729px; */
   width: 100%;
-  height: 1117px;
+  /* max-height: 1117px; */
   /* font-family: REGULAR; */
 }
 
@@ -138,7 +146,7 @@ body {
 }
 
 .sidebar-nav .sidebar-nav__item {
-  margin-top: 8px;
+  margin-top: 7.3px;
 }
 
 .sidebar-nav .sidebar-nav__link img.active {
@@ -576,17 +584,6 @@ div.dt-container div.dt-search input {
   border-style: none;
 }
 
-.mainContent table.dataTable .products,
-.mainContent table.dataTable .orders,
-.mainContent table.dataTable .referralID,
-.mainContent table.dataTable .index,
-.mainContent table.dataTable .installed,
-.mainContent table.dataTable .paid,
-.mainContent table.dataTable .reportQuantity,
-.mainContent table.dataTable .catalogs {
-  text-align: center;
-}
-
 
 /* Xử lý bỏ icon sort */
 .mainContent table.dataTable thead > tr > .th-userID span.dt-column-order,
@@ -633,27 +630,6 @@ div.dt-container div.dt-search input {
 .mainContent table.dataTable thead > tr > .th-solveDate span.dt-column-order
 {
   display: none;
-}
-
-/* Xử lý tràn text */
-.mainContent table.dataTable > tbody > tr td.text-over {
-  display: -webkit-box;
-  	-webkit-line-clamp: 1;  
-  	-webkit-box-orient: vertical;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
-    white-space: nowrap;
-} 
-
-.mainContent table.dataTable > tbody > tr td a {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.mainContent table.dataTable thead > tr > .th-status {
-  text-align: right;
 }
 
 .mainContent table.dataTable tr {
@@ -739,12 +715,16 @@ div.dt-container div.dt-layout-full > *:only-child {
 .mainContent table.dataTable .canceled,
 .mainContent table.dataTable .open,
 .mainContent table.dataTable .scheduled,
-.mainContent table.dataTable .solved  {
+.mainContent table.dataTable .solved,
+.mainContent table.dataTable .canceled,
+.mainContent table.dataTable .scheduled,
+.mainContent table.dataTable .draft,
+.mainContent table.dataTable .waiting  {
   font-family: BOLD;
   /* font-size: 12px; */
   font-weight: 800;
   text-align: right;
-  padding-right: 16px;
+  padding-right: 7px;
   display: block;
 }
 
@@ -792,12 +772,34 @@ div.dt-container div.dt-layout-full > *:only-child {
   color: var(--scheduled);
 }
 
+.mainContent table.dataTable .waiting {
+  color: var(--waiting);
+}
+
 .mainContent .dt-container .dt-info {
   color: #000;
   font-size: 14px;
   font-weight: 400;
   line-height: 17.86px;
   margin-left: 6px;
+}
+
+
+/* Xử lý tràn text */
+.mainContent table.dataTable > tbody > tr td.text-over {
+  display: -webkit-box;
+  	-webkit-line-clamp: 1;  
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+    white-space: nowrap;
+  } 
+
+.mainContent table.dataTable > tbody > tr td a {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* pagination */

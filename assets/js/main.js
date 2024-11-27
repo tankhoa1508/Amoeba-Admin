@@ -128,11 +128,11 @@ let rightSidebarAmbOrderCourses = [
     href: "../ambOrder Messages/ambOrderMessages.html",
   },
   {
-    name: "Packages",
-    icon: "Packages.png",
-    class: "packages",
-    iconActive: "Packages-active.png",
-    href: "../ambOrder Packages/ambOrderPackages.html",
+    name: "Avenue",
+    icon: "Avenue.png",
+    class: "avenue",
+    iconActive: "Avenue-active.png",
+    href: "../ambOrder Avenue/ambOrderAvenue.html",
   },
   {
     name: "Plugins",
