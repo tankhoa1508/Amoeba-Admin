@@ -38,6 +38,7 @@
   --scheduled: #af52de;
   --draft: #ffcc00;
   --waiting: #ffcc00;
+  --pending: #aeaeb2;
 }
 
 * {
@@ -48,6 +49,10 @@
 
 .bg-active {
   background-color: var(--active);
+}
+
+.bg-pending {
+  background-color: var(--pending);
 }
 
 .bg-waiting {
@@ -164,8 +169,8 @@ body {
 }
 
 /* divider */
-.messages::after,
-.transactions::after {
+.sidebar-nav .messages::after,
+.sidebar-nav .transactions::after {
   content: " ";
   display: block;
   margin-top: 8px;
@@ -404,6 +409,7 @@ body {
   width: 363.25px;
   height: 220px;
   background-color: #fff;
+  border: 2px solid #fff;
   border-radius: 12px;
   box-shadow: 0px 4px 24px 0px #00000014;
   margin: 8px;
@@ -427,9 +433,29 @@ body {
 .mainContent__container .controlBoard-list__item .Board__link {
   width: 100%;
   height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ambOrder Control Board: symbol with new notification */
+.mainContent__container
+  .controlBoard-list__item
+  .Board__link
+  .element-container.noti-reports::before,
+.mainContent__container
+  .controlBoard-list__item
+  .Board__link
+  .element-container.noti-messages::before {
+  content: "";
+  position: absolute;
+  right: 38%;
+  top: 21%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff3b30;
 }
 
 .mainContent__container .controlBoard-list__item .Board__link .img-text {
@@ -584,7 +610,6 @@ div.dt-container div.dt-search input {
   border-style: none;
 }
 
-
 /* Xử lý bỏ icon sort */
 .mainContent table.dataTable thead > tr > .th-userID span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-phone span.dt-column-order,
@@ -614,11 +639,26 @@ div.dt-container div.dt-search input {
 .mainContent table.dataTable thead > tr > .th-linkTo span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-duration span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-reportID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-reportQuantity span.dt-column-order,
+.mainContent
+  table.dataTable
+  thead
+  > tr
+  > .th-reportQuantity
+  span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-reason span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-latestDate span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-notificationID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-notificationTitle span.dt-column-order,
+.mainContent
+  table.dataTable
+  thead
+  > tr
+  > .th-notificationID
+  span.dt-column-order,
+.mainContent
+  table.dataTable
+  thead
+  > tr
+  > .th-notificationTitle
+  span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-typeAlert span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-loop span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-sendDate span.dt-column-order,
@@ -627,8 +667,18 @@ div.dt-container div.dt-search input {
 .mainContent table.dataTable thead > tr > .th-shopName span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-shopEmail span.dt-column-order,
 .mainContent table.dataTable thead > tr > .th-openDate span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-solveDate span.dt-column-order
-{
+.mainContent table.dataTable thead > tr > .th-solveDate span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-pluginID span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-pluginTitle span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-devID span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-installed span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-paid span.dt-column-order,
+.mainContent
+  table.dataTable
+  thead
+  > tr
+  > .th-launchedDate
+  span.dt-column-order {
   display: none;
 }
 
@@ -719,7 +769,8 @@ div.dt-container div.dt-layout-full > *:only-child {
 .mainContent table.dataTable .canceled,
 .mainContent table.dataTable .scheduled,
 .mainContent table.dataTable .draft,
-.mainContent table.dataTable .waiting  {
+.mainContent table.dataTable .waiting,
+.mainContent table.dataTable .pending {
   font-family: BOLD;
   /* font-size: 12px; */
   font-weight: 800;
@@ -730,6 +781,10 @@ div.dt-container div.dt-layout-full > *:only-child {
 
 .mainContent table.dataTable .active {
   color: var(--active);
+}
+
+.mainContent table.dataTable .pending {
+  color: var(--pending);
 }
 
 .mainContent table.dataTable .inactive {
@@ -784,16 +839,15 @@ div.dt-container div.dt-layout-full > *:only-child {
   margin-left: 6px;
 }
 
-
 /* Xử lý tràn text */
 .mainContent table.dataTable > tbody > tr td.text-over {
   display: -webkit-box;
-  	-webkit-line-clamp: 1;  
-  	-webkit-box-orient: vertical;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
-    white-space: nowrap;
-  } 
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .mainContent table.dataTable > tbody > tr td a {
   display: block;
@@ -940,14 +994,14 @@ div.dt-container div.dt-layout-full > *:only-child {
 }
 
 .mainContent .row-container .col-container {
-  /* width: 489.67px; */
-  max-width: 489.67px;
+  max-width: 493px;
   min-height: 925px;
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 0px 4px 24px 0px #00000014;
   padding: 16px;
   margin-left: 45px;
+  overflow-y: hidden;
 }
 
 .mainContent .row-container .col-container .detail-product-img {
@@ -1095,6 +1149,14 @@ div.dt-container div.dt-layout-full > *:only-child {
   padding: 12px 16px;
 }
 
+.mainContent .row-container textarea.pluginHighlight {
+  height: 93px;
+}
+
+.mainContent .row-container textarea.pluginDescription {
+  height: 143px;
+}
+
 .mainContent .detail-container .top-col {
   display: flex;
   position: relative;
@@ -1133,7 +1195,6 @@ div.dt-container div.dt-layout-full > *:only-child {
   margin-right: 16px;
 }
 
-
 .mainContent .detail-container .top-col .name {
   font-family: BOLD;
   font-size: 20px;
@@ -1142,12 +1203,12 @@ div.dt-container div.dt-layout-full > *:only-child {
   color: #000000;
   margin-bottom: 6px;
 
-  	display: -webkit-box;
-    max-width: 276px;
-  	-webkit-line-clamp: 1;  /* số dòng hiển thị */
-  	-webkit-box-orient: vertical;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
+  display: -webkit-box;
+  max-width: 276px;
+  -webkit-line-clamp: 1; /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mainContent .detail-container .top-col .id {
@@ -1360,6 +1421,101 @@ div.dt-container div.dt-layout-full > *:only-child {
 /* End Upload file */
 
 /* End product list */
+
+/* Checkbox List */
+.mainContent .col-container .checkBox-list {
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 0;
+}
+
+.mainContent .col-container .checkBox-container {
+  position: relative;
+  display: flex;
+  max-width: 142px;
+  padding: 20px 16px;
+  border-radius: 8px;
+  background: #fbfbfb;
+  border: 1px solid #e9ebee;
+}
+
+.mainContent .col-container .checkBox-container .label-checkBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 16px;
+  padding-top: 12px;
+  font-family: REGULAR;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  margin-bottom: 0;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+.mainContent
+  .col-container
+  .checkBox-container
+  input[type="checkbox"]:checked
+  ~ .label-checkBox {
+  opacity: 1;
+}
+
+.mainContent .col-container .checkBox-container input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  margin-right: 16px;
+}
+.mainContent .col-container .checkBox-container input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -7px;
+  left: 0;
+  border: 1px solid rgba(41, 45, 50, 0.3);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.mainContent .col-container .checkBox-container input[type="checkbox"]::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid rgba(41, 45, 50, 0.3);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: -5px;
+  left: 5px;
+}
+
+.mainContent
+  .col-container
+  .checkBox-container
+  input[type="checkbox"]:checked::before {
+  border: 1px solid rgba(41, 45, 50, 1);
+  background-color: rgba(41, 45, 50, 1);
+}
+
+.mainContent
+  .col-container
+  .checkBox-container
+  input[type="checkbox"]:checked:after {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+}
+
+/* End Checkbox List */
 
 /* End Detail List Item */
 

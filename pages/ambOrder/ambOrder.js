@@ -74,7 +74,7 @@ const ambOrderControlBoardList = ambOrderControlBoardCourses.map(function (item)
   _ulAmbOrderBoard.append(
     `<li class="controlBoard-list__item ${item.class}">
             <a href="${item.href}" class="Board__link ">
-              <div class="element-container">
+              <div class="element-container noti-${item.class}">
                 <img class="img-text" src="../../assets/images/${item.icon} " alt="">
                 <p class="text">${item.text}</p>
               </div>
