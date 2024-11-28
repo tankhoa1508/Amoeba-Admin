@@ -1373,6 +1373,8 @@ div.dt-container div.dt-layout-full > *:only-child {
   font-size: 12px;
 }
 
+/* End product list */
+
 /* Upload file */
 .mainContent .col-container .upload-input {
   display: none;
@@ -1419,8 +1421,6 @@ div.dt-container div.dt-layout-full > *:only-child {
 }
 
 /* End Upload file */
-
-/* End product list */
 
 /* Checkbox List */
 .mainContent .col-container .checkBox-list {
@@ -1517,6 +1517,24 @@ div.dt-container div.dt-layout-full > *:only-child {
 
 /* End Checkbox List */
 
+.mainContent .col-container .add-section {
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+
+  font-family: BOLD;
+font-size: 14px;
+font-weight: 800;
+line-height: 16.71px;
+text-align: left;
+opacity: 0.8;
+cursor: pointer;
+margin-top: 14px;
+}
+
+.mainContent .col-container .add-section:hover {
+  opacity: 1;
+}
 /* End Detail List Item */
 
 /* Analyze Board */

@@ -233,13 +233,25 @@ establishment that specializes in serving traditional and contemporary Korean cu
 
                 <div class="row row-cols-3 checkBox-list">
                   <div class="col col-4 checkBox-container">
-                    <input type="checkbox" id="english" name="english" checked/>
+                    <input
+                      type="checkbox"
+                      id="english"
+                      name="english"
+                      checked
+                    />
                     <label class="label-checkBox" for="english">English</label>
                   </div>
 
                   <div class="col col-4 checkBox-container">
-                    <input type="checkbox" id="vietnamese" name="vietnamese" checked />
-                    <label class="label-checkBox" for="vietnamese">Vietnamese</label>
+                    <input
+                      type="checkbox"
+                      id="vietnamese"
+                      name="vietnamese"
+                      checked
+                    />
+                    <label class="label-checkBox" for="vietnamese"
+                      >Vietnamese</label
+                    >
                   </div>
 
                   <div class="col col-4 checkBox-container">
@@ -312,13 +324,18 @@ establishment that specializes in serving traditional and contemporary Korean cu
 
             <div class="col col-container col2">
               <div class="row row-cols-2">
-                <div class="col col-12 big-img"></div>
+                <div class="col col-4 detail-product-img"></div>
+                <div class="col col-4 detail-product-img"></div>
+                <div class="col col-4 detail-product-img"></div>
+                <div class="col col-4 detail-product-img"></div>
+                <div class="col col-4 detail-product-img"></div>
+                <div class="col col-4 detail-product-img"></div>
 
                 <div class="divider-list-item"></div>
 
                 <div class="col col-6">
-                  <label for="createdDate">Created Date</label>
-                  <input type="date" id="createdDate" name="createdDate" />
+                  <label for="launchedDate">Launched Date</label>
+                  <input type="date" id="launchedDate" name="launchedDate" />
                 </div>
 
                 <div class="col col-6">
@@ -329,34 +346,45 @@ establishment that specializes in serving traditional and contemporary Korean cu
                 <div class="divider-list-item"></div>
 
                 <div class="col col-6">
-                  <label for="userID">User ID</label>
+                  <label for="developerID">Developer ID</label>
                   <input
                     type="text"
-                    id="userID"
-                    name="userID"
-                    value="#US.AGV274"
+                    id="developerID"
+                    name="developerID"
+                    value="#DE.AGV274"
                   />
                 </div>
 
                 <div class="col col-6">
-                  <label for="fullName">Full Name</label>
+                  <label for="devName">Dev Name</label>
                   <input
                     type="text"
-                    id="fullName"
-                    name="fullName"
-                    value="김익용"
+                    id="devName"
+                    name="devName"
+                    value="Dev Comp."
                   />
                 </div>
 
                 <div class="col col-6">
-                  <label for="userEmail">User Email</label>
+                  <label for="devEmail">Dev Email</label>
                   <input
                     type="email"
-                    id="userEmail"
-                    name="userEmail"
-                    value="fremd@gmail.com"
+                    id="devEmail"
+                    name="devEmail"
+                    value="compdev@gmail.com"
                   />
                 </div>
+
+                <div class="col col-6">
+                  <label for="devWebsite">Dev Website</label>
+                  <input
+                    type="url"
+                    id="devWebsite"
+                    name="devWebsite"
+                    value="https://www.devcomp.com"
+                  />
+                </div>
+
                 <div class="col col-6">
                   <span class="label-name">Phone Number</span>
                   <div class="label-in-input">
@@ -366,399 +394,151 @@ establishment that specializes in serving traditional and contemporary Korean cu
                       id="phoneNumber"
                       name="phoneNumber"
                       pattern="[0][0-9]{9}"
-                      value="0334542911"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-container col3">
-              <div class="row">
-                <div class="title">Category</div>
-
-                <div class="category-area">
-                  <label for="createNewCategory">Create new Category</label
-                  ><br />
-                  <input
-                    type="text"
-                    id="createNewCategory"
-                    name="createNewCategory"
-                    placeholder="Enter new category"
-                  />
-
-                  <input
-                    type="image"
-                    class="add-icon"
-                    src="../../assets/images/add-category-icon.png"
-                    alt="Add Category"
-                  />
-
-                  <div class="category-item">
-                    <div class="name">Long Sleeves Dresses</div>
-                    <input
-                      type="image"
-                      class="close-icon"
-                      src="../../assets/images/close-circle.svg"
-                    />
-                  </div>
-                  <div class="category-item">
-                    <div class="name">Maxi Dresses</div>
-                    <input
-                      type="image"
-                      class="close-icon"
-                      src="../../assets/images/close-circle.svg"
-                    />
-                  </div>
-                  <div class="category-item">
-                    <div class="name">Bikini</div>
-                    <input
-                      type="image"
-                      class="close-icon"
-                      src="../../assets/images/close-circle.svg"
-                    />
-                  </div>
-                  <div class="category-item">
-                    <div class="name">Beach Short</div>
-                    <input
-                      type="image"
-                      class="close-icon"
-                      src="../../assets/images/close-circle.svg"
+                      value="0000000000"
                     />
                   </div>
                 </div>
 
                 <div class="divider-list-item"></div>
 
-                <div class="title">
-                  Products <span class="text-dark fw-normal">(24)</span>
+                <div class="col col-12">
+                  <label>Resources</label>
                 </div>
 
-                <div class="product-area">
-                  <div class="category-list">
-                    <div class="category-item">
-                      <div class="name">All</div>
-                    </div>
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="manual"
+                    name="manual"
+                    value="Manual"
+                  />
+                </div>
 
-                    <div class="category-item">
-                      <div class="name">Long Sleeves Dresses</div>
-                    </div>
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="manualLink"
+                    name="manualLink"
+                    value="https://www.devcomp.com/manual"
+                  />
+                </div>
 
-                    <div class="category-item">
-                      <div class="name">Maxi Dresses</div>
-                    </div>
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="terms"
+                    name="terms"
+                    value="Terms"
+                  />
+                </div>
 
-                    <div class="category-item">
-                      <div class="name">Bikini</div>
-                    </div>
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="termsLink"
+                    name="termsLink"
+                    value="https://www.devcomp.com/terms"
+                  />
+                </div>
 
-                    <div class="category-item">
-                      <div class="name">Beach Short</div>
-                    </div>
-                  </div>
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="privacy"
+                    name="privacy"
+                    value="Privacy"
+                  />
+                </div>
 
-                  <div class="row">
-                    <div class="col col-3 product-card">
-                      <img
-                        src="../../assets/images/product-img.png"
-                        class="card-img"
-                        width="102.5"
-                        height="108"
-                        alt="..."
-                      />
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">
-                          648.000<span
-                            style="text-decoration: underline; color: #000"
-                            >đ</span
-                          >
-                        </p>
-                        <p class="inventory">
-                          Inventory:
-                          <span style="color: #32ade6; font-weight: bold"
-                            >25</span
-                          >
-                        </p>
-                        <p class="status">
-                          Status:
-                          <span style="color: var(--active); font-weight: bold"
-                            >Active</span
-                          >
-                        </p>
-                      </div>
-                    </div>
+                <div class="col col-6">
+                  <input
+                    type="text"
+                    id="privacyLink"
+                    name="privacyLink"
+                    value="https://www.devcomp.com/privacy"
+                  />
+                </div>
 
-                    <div class="col col-3 product-card">
-                      <img
-                        src="../../assets/images/product-img.png"
-                        class="card-img"
-                        width="102.5"
-                        height="108"
-                        alt="..."
-                      />
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">
-                          648.000<span
-                            style="text-decoration: underline; color: #000"
-                            >đ</span
-                          >
-                        </p>
-                        <p class="inventory">
-                          Inventory:
-                          <span style="color: #32ade6; font-weight: bold"
-                            >25</span
-                          >
-                        </p>
-                        <p class="status">
-                          Status:
-                          <span style="color: var(--active); font-weight: bold"
-                            >Active</span
-                          >
-                        </p>
-                      </div>
-                    </div>
+                <div class="col col-12 add-section">
+                  <img src="../../assets/images/add-icon.svg" width="20" height="20" alt="">
+                  <p class="ms-2">Add more resources</p>
+                </div>
+              </div>
+            </div>
 
-                    <div class="col col-3 product-card">
-                      <img
-                        src="../../assets/images/product-img.png"
-                        class="card-img"
-                        width="102.5"
-                        height="108"
-                        alt="..."
-                      />
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">
-                          648.000<span
-                            style="text-decoration: underline; color: #000"
-                            >đ</span
-                          >
-                        </p>
-                        <p class="inventory">
-                          Inventory:
-                          <span style="color: #32ade6; font-weight: bold"
-                            >25</span
-                          >
-                        </p>
-                        <p class="status">
-                          Status:
-                          <span style="color: var(--active); font-weight: bold"
-                            >Active</span
-                          >
-                        </p>
-                      </div>
-                    </div>
+            <div class="col col-container col3">
+              <div class="row">
+                <div class="title">Pricing Package</div>
 
-                    <div class="col col-3 product-card">
-                      <img
-                        src="../../assets/images/product-img.png"
-                        class="card-img"
-                        width="102.5"
-                        height="108"
-                        alt="..."
-                      />
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">
-                          648.000<span
-                            style="text-decoration: underline; color: #000"
-                            >đ</span
-                          >
-                        </p>
-                        <p class="inventory">
-                          Inventory:
-                          <span style="color: #32ade6; font-weight: bold"
-                            >25</span
-                          >
-                        </p>
-                        <p class="status">
-                          Status:
-                          <span style="color: var(--active); font-weight: bold"
-                            >Active</span
-                          >
-                        </p>
-                      </div>
-                    </div>
+                <div class="col col-6">
+                  <label for="packageTitle">Package Title</label>
+                  <input
+                    type="text"
+                    id="packageTitle"
+                    name="packageTitle"
+                    value="Free Package"
+                  />
+                </div>
 
-                    <div class="col col-3 product-card">
-                      <img
-                        src="../../assets/images/product-img.png"
-                        class="card-img"
-                        width="102.5"
-                        height="108"
-                        alt="..."
-                      />
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">
-                          648.000<span
-                            style="text-decoration: underline; color: #000"
-                            >đ</span
-                          >
-                        </p>
-                        <p class="inventory">
-                          Inventory:
-                          <span style="color: #32ade6; font-weight: bold"
-                            >25</span
-                          >
-                        </p>
-                        <p class="status">
-                          Status:
-                          <span style="color: var(--active); font-weight: bold"
-                            >Active</span
-                          >
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col col-3 product-card">
-                      <img
-                        src="../../assets/images/product-img.png"
-                        class="card-img"
-                        width="102.5"
-                        height="108"
-                        alt="..."
-                      />
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">
-                          648.000<span
-                            style="text-decoration: underline; color: #000"
-                            >đ</span
-                          >
-                        </p>
-                        <p class="inventory">
-                          Inventory:
-                          <span style="color: #32ade6; font-weight: bold"
-                            >25</span
-                          >
-                        </p>
-                        <p class="status">
-                          Status:
-                          <span style="color: var(--active); font-weight: bold"
-                            >Active</span
-                          >
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col col-3 product-card">
-                      <img
-                        src="../../assets/images/product-img.png"
-                        class="card-img"
-                        width="102.5"
-                        height="108"
-                        alt="..."
-                      />
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">
-                          648.000<span
-                            style="text-decoration: underline; color: #000"
-                            >đ</span
-                          >
-                        </p>
-                        <p class="inventory">
-                          Inventory:
-                          <span style="color: #32ade6; font-weight: bold"
-                            >25</span
-                          >
-                        </p>
-                        <p class="status">
-                          Status:
-                          <span style="color: var(--active); font-weight: bold"
-                            >Active</span
-                          >
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col col-3 product-card">
-                      <img
-                        src="../../assets/images/product-img.png"
-                        class="card-img"
-                        width="102.5"
-                        height="108"
-                        alt="..."
-                      />
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">
-                          648.000<span
-                            style="text-decoration: underline; color: #000"
-                            >đ</span
-                          >
-                        </p>
-                        <p class="inventory">
-                          Inventory:
-                          <span style="color: #32ade6; font-weight: bold"
-                            >25</span
-                          >
-                        </p>
-                        <p class="status">
-                          Status:
-                          <span style="color: var(--active); font-weight: bold"
-                            >Active</span
-                          >
-                        </p>
-                      </div>
-                    </div>
-
-                    <!-- <div class="col col-3 product-card">
-                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
-                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
-                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
-                      </div>
-                    </div>
-                    
-                    <div class="col col-3 product-card">
-                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
-                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
-                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
-                      </div>
-                    </div>
-  
-                    <div class="col col-3 product-card">
-                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
-                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
-                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
-                      </div>
-                    </div>
-  
-                    <div class="col col-3 product-card">
-                      <img src="../../assets/images/product-img.png" class="card-img" width="102.5" height="108" alt="...">
-                      <div class="body">
-                        <p class="name">Long Sleeve Yell...</p>
-                        <p class="productID">#PD.AHC271</p>
-                        <p class="price">648.000<span style="text-decoration: underline; color: #000;">đ</span></p>
-                        <p class="inventory">Inventory: <span style="color: #32ADE6; font-weight: bold;">25</span></p>
-                        <p class="status">Status: <span style="color: var(--active); font-weight: bold;">Active</span></p>
-                      </div>
-                    </div> -->
+                <div class="col col-6">
+                  <span class="label-name">Pricing</span>
+                  <div class="label-in-input">
+                    <label for="pricing">VNĐ</label>
+                    <input type="text" id="pricing" name="pricing" value="0" />
                   </div>
                 </div>
+
+                <div class="col col-12">
+                  <label for="packageDescription">Package Description</label>
+
+                  <textarea
+                    id="packageDescription"
+                    name="packageDescription"
+                  >
+establishment that specializes in serving traditional and contemporary Korean cuisine. Known for its emphasis on fresh ingredients, distinct flavors, and a balance of various food groups, Korean restaurants offer a wide array of dishes. These include bibimbap (a mixed rice dish), kimchi (fermented vegetables), bulgogi (marinated beef barbecue), and a variety of side dishes known as banchan.
+                    </textarea
+                  >
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="packageTitle">Package Title</label>
+                  <input
+                    type="text"
+                    id="packageTitle"
+                    name="packageTitle"
+                    value="1st Package"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <span class="label-name">Pricing</span>
+                  <div class="label-in-input">
+                    <label for="pricing">VNĐ</label>
+                    <input type="text" id="pricing" name="pricing" value="399.000" />
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <label for="packageDescription">Package Description</label>
+
+                  <textarea
+                    id="packageDescription"
+                    name="packageDescription"
+                  >
+establishment that specializes in serving traditional and contemporary Korean cuisine. Known for its emphasis on fresh ingredients, distinct flavors, and a balance of various food groups, Korean restaurants offer a wide array of dishes. These include bibimbap (a mixed rice dish), kimchi (fermented vegetables), bulgogi (marinated beef barbecue), and a variety of side dishes known as banchan.
+                    </textarea
+                  >
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-12 add-section">
+                  <img src="../../assets/images/add-icon.svg" width="20" height="20" alt="">
+                  <p class="ms-2">Add more pricing package</p>
+                </div>
+
               </div>
             </div>
           </div>
