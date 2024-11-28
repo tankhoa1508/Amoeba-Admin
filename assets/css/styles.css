@@ -26,6 +26,7 @@
   --text: #616161;
   --active: #34c759;
   --blocked: #ff3b30;
+  --expired: #a2845e;
   --inactive: #a2845e;
   --new: #ff9500;
   --processing: #af52de;
@@ -39,6 +40,7 @@
   --draft: #ffcc00;
   --waiting: #ffcc00;
   --pending: #aeaeb2;
+  --nearlyExpired: #ff9500;
 }
 
 * {
@@ -49,6 +51,14 @@
 
 .bg-active {
   background-color: var(--active);
+}
+
+.bg-nearlyExpired {
+  background-color: var(--nearlyExpired);
+}
+
+.bg-expired {
+  background-color: var(--expired);
 }
 
 .bg-pending {
@@ -678,7 +688,10 @@ div.dt-container div.dt-search input {
   thead
   > tr
   > .th-launchedDate
-  span.dt-column-order {
+  span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-subscriptionID span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-purchasedDate span.dt-column-order,
+.mainContent table.dataTable thead > tr > .th-expiryDate span.dt-column-order {
   display: none;
 }
 
@@ -770,7 +783,9 @@ div.dt-container div.dt-layout-full > *:only-child {
 .mainContent table.dataTable .scheduled,
 .mainContent table.dataTable .draft,
 .mainContent table.dataTable .waiting,
-.mainContent table.dataTable .pending {
+.mainContent table.dataTable .pending,
+.mainContent table.dataTable .nearlyExpired,
+.mainContent table.dataTable .expired  {
   font-family: BOLD;
   /* font-size: 12px; */
   font-weight: 800;
@@ -829,6 +844,14 @@ div.dt-container div.dt-layout-full > *:only-child {
 
 .mainContent table.dataTable .waiting {
   color: var(--waiting);
+}
+
+.mainContent table.dataTable .nearlyExpired {
+  color: var(--nearlyExpired);
+}
+
+.mainContent table.dataTable .expired {
+  color: var(--expired);
 }
 
 .mainContent .dt-container .dt-info {
@@ -1523,18 +1546,44 @@ div.dt-container div.dt-layout-full > *:only-child {
   color: var(--primary);
 
   font-family: BOLD;
-font-size: 14px;
-font-weight: 800;
-line-height: 16.71px;
-text-align: left;
-opacity: 0.8;
-cursor: pointer;
-margin-top: 14px;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 16.71px;
+  text-align: left;
+  opacity: 0.8;
+  cursor: pointer;
+  margin-top: 14px;
 }
 
 .mainContent .col-container .add-section:hover {
   opacity: 1;
 }
+
+/* Table Detail */
+.mainContent .col-container .table-detail {
+  background: #FBFBFB ;
+  border: 1px solid #E9EBEE;
+  padding: 4px 3px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2px;
+
+border-radius: 8px;
+}
+
+.mainContent .col-container .table-detail div {
+  text-align: center;
+}
+
+.mainContent .col-container .table-detail div:last-child {
+  text-align: right;
+}
+
+.mainContent .col-container .table-detail div:first-child {
+  text-align: left;
+}
+/* End Table Detail */
+
 /* End Detail List Item */
 
 /* Analyze Board */
