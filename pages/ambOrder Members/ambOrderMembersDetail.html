@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amoeba Admin</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png" />
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css"> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="./ambOrderMembers.css" />
+  </head>
+  <body>
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+      <div class="wrapper sidebar-wrapper">
+        <div class="logo">
+          <a href="../ambOrder/ambOrder.html">
+            <img
+              src="../../assets/images/logo-amoeba.png"
+              alt=""
+              width="33.53"
+              height="38"
+            />
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list leftSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Left Sidebar Navigation -->
+
+    <!-- Right Sidebar Navigation -->
+    <div class="sidebar sidebar2">
+      <div class="wrapper sidebar-wrapper">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list rightSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Right Sidebar Navigation -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <div class="name-page">Admin Members</div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <div class="subsearch-container">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-nav__subsearch"
+                />
+                <img
+                  src="../../assets/images/search-icon.svg"
+                  class="subsearch-icon"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="noti-dropdown">
+                <button class="noti-dropbtn" onclick="notiDropdown()">
+                  <img
+                    src="../../assets/images/noti-header.svg"
+                    class="noti-header"
+                    alt=""
+                  />
+                  <img
+                    src="../../assets/images/noti-mark-header.svg"
+                    class="noti-mark-header"
+                    alt=""
+                  />
+                </button>
+                <div class="noti-dropdown-content" id="noti-Dropdown">
+                  <a href="#">Lorem ipsum dolor sit amet.</a>
+                  <a href="#">Lorem, ipsum dolor.</a>
+                  <a href="#"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus, reiciendis.</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="language-dropdown">
+                <button class="language-dropbtn" onclick="languageDropdown()">
+                  <img
+                    src="../../assets/images/language.svg"
+                    class="language-header"
+                    alt=""
+                  />
+                </button>
+                <div class="language-dropdown-content" id="language-Dropdown">
+                  <a href="#">English</a>
+                  <a href="#">Vietnamese</a>
+                  <a href="#">block</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <img
+                src="../../assets/images/avatar.png"
+                class="avatar-header"
+                alt=""
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <section class="mainContent">
+      <div class="mainContent__container">
+        <div class="top-elements">
+          <a href="./ambOrderMembers.html">
+            <img src="../../assets/images/back-icon.svg" alt="" />
+          </a>
+
+          <a href="./ambOrderMembers.html">
+            <button class="btn-save">Save</button>
+          </a>
+        </div>
+
+        <div class="detail-container">
+          <div class="row row-container">
+            <div class="col col-container">
+              <div class="top-col">
+                <div class="detail-avatar"></div>
+                <div>
+                  <div class="name">Truc Hoang</div>
+                  <div class="id">#MB.AGV274</div>
+                  <div class="status bg-active">Active</div>
+                </div>
+                <img
+                  class="img1st"
+                  src="../../assets/images/top-detail-icon.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <img
+                  class="img2nd"
+                  src="../../assets/images/top-detail-icon2.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+              </div>
+
+              <div class="row row-cols-2">
+                <div class="col col-6">
+                  <label for="memberID">Member ID</label>
+                  <input
+                    type="text"
+                    id="memberID"
+                    name="memberID"
+                    value="#MB.AGV274"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="memberName">Member Name</label>
+                  <input
+                    type="text"
+                    id="memberName"
+                    name="memberName"
+                    value="Truc Hoang"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="memberEmail">Member Email</label>
+                  <input
+                    type="email"
+                    id="memberEmail"
+                    name="memberEmail"
+                    value="truc.hoang@gmail.com"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <span class="label-name">Member Number</span>
+                  <div class="label-in-input">
+                    <label for="memberNumber">+84</label>
+                    <input
+                      type="tel"
+                      id="memberNumber"
+                      name="memberNumber"
+                      pattern="[0][0-9]{9}"
+                      value="0334542911"
+                    />
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="joinedDate">Joined Date</label>
+                  <input type="date" id="joinedDate" name="joinedDate" />
+                </div>
+
+                <div class="col col-6">
+                  <label for="status">Status</label>
+                  <select name="status" id="status">
+                    <option value="active">Active</option>
+                    <option value="blocked">Blocked</option>
+                  </select>
+                </div>
+
+                
+              </div>
+            </div>
+
+            <div class="col col-container col2">
+              <div class="col col-12 title">Pricing Package</div>
+
+              <div class="row row-cols-2">
+                <div class="col col-12">
+                  <label for="role">Role</label> <br>
+                  <select name="role" id="role">
+                    <option value="superAdmin">Super Admin</option>
+                    <option value="blocked">Blocked</option>
+                  </select>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-12">
+                  <label>Access Modules</label>
+                </div>
+
+                <div class="row col-12 access-modules-list">
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Users
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Products
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Catalogs
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Orders
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Popups
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Alerts
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Contents
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Service Packages
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Reports
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Messages
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Avenue
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Plugins
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Subscriptions
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Transactions
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Members
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Supports
+                    </div>
+                  </div>
+  
+                  <div class="col col-6">
+                    <div class="access-modules">
+                      ambOrder Settings
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-container col3">
+              <div class="row">
+                <div class="title">Access Rights</div>
+
+                <div class="col col-6 " >
+                  <label>Modules</label>
+                  <div class="modules">
+                    ambOrder Users
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label>Rights</label>
+  
+                  <div class="checkBox-list">
+                    <div class="col col-12 checkBox-container">
+                      <input
+                        type="checkbox"
+                        id="users-update"
+                        name="users-update"
+                        checked
+                      />
+                      <label class="label-checkBox" for="users-update"
+                        >Update</label
+                      >
+                    </div>
+  
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="users-block" name="users-block" />
+                      <label class="label-checkBox" for="users-block">Block</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6 " >
+                  <label>Modules</label>
+                  <div class="modules">
+                    ambOrder Products
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label>Rights</label>
+  
+                  <div class="checkBox-list">
+                    <div class="col col-12 checkBox-container">
+                      <input
+                        type="checkbox"
+                        id="products-update"
+                        name="products-update"
+                        checked
+                      />
+                      <label class="label-checkBox" for="products-update"
+                        >Update</label
+                      >
+                    </div>
+  
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="products-block" name="products-block" />
+                      <label class="label-checkBox" for="products-block">Block</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6 " >
+                  <label>Modules</label>
+                  <div class="modules">
+                    ambOrder Catalogs
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label>Rights</label>
+  
+                  <div class="checkBox-list">
+                    <div class="col col-12 checkBox-container">
+                      <input
+                        type="checkbox"
+                        id="catalogs-update"
+                        name="catalogs-update"
+                        checked
+                      />
+                      <label class="label-checkBox" for="catalogs-update"
+                        >Update</label
+                      >
+                    </div>
+  
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="catalogs-block" name="catalogs-block" />
+                      <label class="label-checkBox" for="catalogs-block">Block</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6 " >
+                  <label>Modules</label>
+                  <div class="modules">
+                    ambOrder Orders
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label>Rights</label>
+  
+                  <div class="checkBox-list">
+                    <div class="col col-12 checkBox-container">
+                      <input
+                        type="checkbox"
+                        id="orders-update"
+                        name="orders-update"
+                        checked
+                      />
+                      <label class="label-checkBox" for="orders-update"
+                        >Update</label
+                      >
+                    </div>
+  
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="orders-block" name="orders-block" />
+                      <label class="label-checkBox" for="orders-block">Block</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6 " >
+                  <label>Modules</label>
+                  <div class="modules">
+                    ambOrder Alerts
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label>Rights</label>
+  
+                  <div class="checkBox-list">
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="alerts-create" name="alerts-create" />
+                      <label class="label-checkBox" for="alerts-create">Create</label>
+                    </div>
+                    <div class="col col-12 checkBox-container">
+                      <input
+                        type="checkbox"
+                        id="alerts-update"
+                        name="alerts-update"
+                        checked
+                      />
+                      <label class="label-checkBox" for="alerts-update"
+                        >Update</label
+                      >
+                    </div>
+  
+
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="alerts-cancel" name="alerts-cancel" />
+                      <label class="label-checkBox" for="alerts-cancel">Cancel</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6 " >
+                  <label>Modules</label>
+                  <div class="modules">
+                    ambOrder Alerts
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label>Rights</label>
+  
+                  <div class="checkBox-list">
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="alerts-create" name="alerts-create" />
+                      <label class="label-checkBox" for="alerts-create">Create</label>
+                    </div>
+                    <div class="col col-12 checkBox-container">
+                      <input
+                        type="checkbox"
+                        id="alerts-update"
+                        name="alerts-update"
+                        checked
+                      />
+                      <label class="label-checkBox" for="alerts-update"
+                        >Update</label
+                      >
+                    </div>
+  
+
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="alerts-cancel" name="alerts-cancel" />
+                      <label class="label-checkBox" for="alerts-cancel">Cancel</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6 " >
+                  <label>Modules</label>
+                  <div class="modules">
+                    ambOrder Alerts
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label>Rights</label>
+  
+                  <div class="checkBox-list">
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="alerts-create" name="alerts-create" />
+                      <label class="label-checkBox" for="alerts-create">Create</label>
+                    </div>
+                    <div class="col col-12 checkBox-container">
+                      <input
+                        type="checkbox"
+                        id="alerts-update"
+                        name="alerts-update"
+                        checked
+                      />
+                      <label class="label-checkBox" for="alerts-update"
+                        >Update</label
+                      >
+                    </div>
+  
+
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="alerts-cancel" name="alerts-cancel" />
+                      <label class="label-checkBox" for="alerts-cancel">Cancel</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6 " >
+                  <label>Modules</label>
+                  <div class="modules">
+                    ambOrder Popups
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label>Rights</label>
+  
+                  <div class="checkBox-list">
+                    <div class="col col-12 checkBox-container">
+                      <input
+                        type="checkbox"
+                        id="update"
+                        name="update"
+                        checked
+                      />
+                      <label class="label-checkBox" for="update"
+                        >Update</label
+                      >
+                    </div>
+  
+                    <div class="col col-12 checkBox-container">
+                      <input type="checkbox" id="block" name="block" />
+                      <label class="label-checkBox" for="block">Block</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Content -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
+    <script src="./ambOrderMembers.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

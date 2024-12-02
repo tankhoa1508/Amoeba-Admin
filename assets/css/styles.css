@@ -1537,6 +1537,59 @@ div.dt-container div.dt-layout-full > *:only-child {
 }
 /* End Table Detail */
 
+/* Access Modules List */
+.mainContent .col-container .access-modules {
+  width: 221px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #32ADE61A;
+
+  border: 1px solid #32ADE6;
+  color: #32ADE6;
+
+  font-family: BOLD;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.mainContent .col-container .module-active,
+.mainContent .col-container .access-modules:hover  {
+  background-color: #FC95011A;
+
+  border: 1px solid #FC9501;
+  color: #FC9501;
+}
+
+.mainContent .col-container .module-non-active {
+  background-color: #32ADE61A;
+
+  border: 1px solid #32ADE6;
+  color: #32ADE6;
+}
+
+
+.mainContent .col-container .modules {
+  width: 221px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: #FBFBFB;
+
+  border: 1px solid #E9EBEE;
+  color: #000;
+
+  font-family: REGULAR;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+
+  user-select: none;
+}
+/* End Access Modules List */
+
 /* End Detail List Item */
 
 /* Analyze Board */

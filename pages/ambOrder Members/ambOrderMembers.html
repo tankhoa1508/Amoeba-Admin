@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoeba Admin</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+
+
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="./ambOrderMembers.css">
+</head>
+<body>
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="wrapper sidebar-wrapper">
+            <div class="logo">
+                <a href="../ambOrder/ambOrder.html">
+                    <img src="../../assets/images/logo-amoeba.png" alt="" width="33.53" height="38">
+                </a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul class="sidebar-nav__list leftSidebarAmbOrder p-0">
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Left Sidebar Navigation -->
+
+    <!-- Right Sidebar Navigation -->
+    <div class="sidebar sidebar2">
+        <div class="wrapper sidebar-wrapper">
+            <nav class="sidebar-nav">
+                <ul class="sidebar-nav__list rightSidebarAmbOrder p-0">
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Right Sidebar Navigation -->
+
+    <!-- Header -->
+    <header class="header">
+        <div class="wrapper header-wrapper">
+            <div class="name-page">
+                Admin Members
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <div class="subsearch-container">
+                            <input type="text" placeholder="Search" class="header-nav__subsearch">
+                            <img src="../../assets/images/search-icon.svg" class="subsearch-icon" alt="">
+                        </div>
+                    </li>
+                    <li class="header-nav__item">
+                        <div class="noti-dropdown">
+                            <button class="noti-dropbtn" onclick="notiDropdown()">
+                                <img src="../../assets/images/noti-header.svg" class="noti-header" alt="">
+                                <img src="../../assets/images/noti-mark-header.svg" class="noti-mark-header" alt="">
+                            </button>
+                            <div class="noti-dropdown-content" id="noti-Dropdown">
+                              <a href="#">Lorem ipsum dolor sit amet.</a>
+                              <a href="#">Lorem, ipsum dolor.</a>
+                              <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, reiciendis.</a>
+                            </div>
+                        </div> 
+                        
+                    </li>
+                    <li class="header-nav__item">
+                        <div class="language-dropdown">
+                            <button class="language-dropbtn" onclick="languageDropdown()">
+                                <img src="../../assets/images/language.svg" class="language-header" alt="">
+                            </button>
+                            <div class="language-dropdown-content" id="language-Dropdown">
+                              <a href="#">English</a>
+                              <a href="#">Vietnamese</a>
+                              <a href="#">Korean</a>
+                            </div>
+                        </div> 
+                    </li>
+                    <li class="header-nav__item">
+                        <img src="../../assets/images/avatar.png" class="avatar-header" alt="">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+     <section class="mainContent">
+        <div class="mainContent__container">
+            <a href="./ambOrderMembersDetail.html" class="create-btn">Create new Member</a>
+            <!-- table -->
+            <img src="../../assets/images/search-icon.svg" class="search-icon" alt="">
+            <table class="table" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="th-memberID">Member ID</th>
+                        <th class="th-clientName">Client Name</th>
+                        <th class="th-phoneNumber">Phone Number</th>
+                        <th class="th-email">Email</th>
+                        <th class="th-role">Role</th>
+                        <th class="th-joinedTime">Joined Time</th>
+                        <th class="th-status">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="members">
+                    
+                </tbody>
+            </table>
+            <div class="analyze-board">
+                <div class="analyze-board__title">Analytics</div>
+                <div class="analyze-board__divider"></div>
+            </div>
+        </div>
+     </section>
+    <!-- End Main Content -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
+     <script src="./ambOrderMembers.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
