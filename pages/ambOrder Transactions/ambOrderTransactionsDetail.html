@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
-    <link rel="stylesheet" href="./ambOrderPopups.css" />
+    <link rel="stylesheet" href="./ambOrderTransactions.css" />
   </head>
   <body>
     <!-- Left Sidebar Navigation -->
@@ -55,7 +55,7 @@
     <!-- Header -->
     <header class="header">
       <div class="wrapper header-wrapper">
-        <div class="name-page">ambOrder Popups</div>
+        <div class="name-page">ambOrder Transactions</div>
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -129,11 +129,11 @@
     <section class="mainContent">
       <div class="mainContent__container">
         <div class="top-elements">
-          <a href="./ambOrderPopups.html">
+          <a href="./ambOrderTransactions.html">
             <img src="../../assets/images/back-icon.svg" alt="" />
           </a>
 
-          <a href="./ambOrderPopups.html">
+          <a href="./ambOrderTransactions.html">
             <button class="btn-save">Save</button>
           </a>
         </div>
@@ -144,9 +144,9 @@
               <div class="top-col">
                 <div class="detail-avatar"></div>
                 <div>
-                  <div class="name">Beginner - Download Samp...</div>
-                  <div class="id">#PU.AGV274</div>
-                  <div class="status bg-open">Open</div>
+                  <div class="name">Subscription <span class="fw-bold">#SU.AGV274</span></div>
+                  <div class="id">#TS.AGV274</div>
+                  <div class="status bg-waiting">Waiting</div>
                 </div>
                 <img
                   class="img1st"
@@ -166,119 +166,119 @@
 
               <div class="row row-cols-2">
                 <div class="col col-6">
-                  <label for="popupID">Popup ID</label>
+                  <label for="transactionID">Transaction ID</label>
                   <input
                     type="text"
-                    id="popupID"
-                    name="popupID"
-                    value="#OR.AGV274"
+                    id="transactionID"
+                    name="transactionID"
+                    value="#TS.AGV274"
                   />
                 </div>
 
                 <div class="col col-6">
-                  <label for="popupType">Popup Type</label> <br />
-                  <select name="popupType" id="popupType">
-                    <option value="sampleDownload">Sample Download</option>
-                    <option value="no">No</option>
+                  <label for="transactionStatus">Transaction Status</label>
+                  <select name="transactionStatus" id="transactionStatus">
+                    <option value="waiting">Waiting</option>
+                    <option value="unpublish">Unpublish</option>
                   </select>
                 </div>
 
                 <div class="col col-12">
-                  <label for="popupTitle">Popup Title</label>
-                  <input
-                    type="text"
-                    id="popupTitle"
-                    name="popupTitle"
-                    placeholder="Enter here"
-                    value="Beginner - Download Sample Catalogs"
-                  />
+                  <label for="billingType">Billing Type</label>
                 </div>
 
                 <div class="col col-6">
-                  <label for="index">Index</label> <br />
-                  <select name="index" id="index">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
+                  <select name="billingType" id="billingType">
+                    <option value="Subscription">Subscription</option>
+                    <option value="#PL.AGV247">#PL.AGV247</option>
+                    <option value="#PL.AGV250">#PL.AGV250</option>
+                    <option value="#PL.AGV211">#PL.AGV211</option>
                   </select>
                 </div>
 
                 <div class="col col-6">
-                  <label for="linkTo">Link To</label> <br />
-                  <select name="linkTo" id="linkTo">
-                    <option value="internal">Internal</option>
-                    <option value="no">No</option>
+                  <select name="billingType" id="billingType">
+                    <option value="#SU.AGV274">#SU.AGV274</option>
+                    <option value="#SU.AGV247">#SU.AGV247</option>
+                    <option value="#SU.AGV250">#SU.AGV250</option>
+                    <option value="#SU.AGV211">#SU.AGV211</option>
                   </select>
                 </div>
 
                 <div class="col col-6">
-                  <label for="destination">Destination</label> <br />
-                  <select name="destination" id="destination">
-                    <option value="amoebaShare">Amoeba Share</option>
-                    <option value="no">No</option>
+                  <label for="paymentMethod">Payment Method</label>
+                  <select name="paymentMethod" id="paymentMethod">
+                    <option value="Bank Transfers">Bank Transfers</option>
+                    <option value="Bank Transfers">Bank Transfers</option>
+                    <option value="Bank Transfers">Bank Transfers</option>
+                    <option value="Bank Transfers">Bank Transfers</option>
                   </select>
                 </div>
 
                 <div class="col col-6">
-                  <label for="objectID">Object ID</label>
-                  <input
-                    type="text"
-                    id="objectID"
-                    name="objectID"
-                    placeholder="Enter ID here"
-                    value=""
-                  />
+                  <span class="label-name">Price</span>
+                  <div class="label-in-input">
+                    <label for="price">VNĐ</label>
+                    <input type="text" id="price" name="price" value="49.000" />
+                  </div>
                 </div>
 
-                <div class="col col-6" style="width: 100%">
-                  <label for="createdDate">Created Date</label> <br />
-                  <input type="date" id="createdDate" name="createdDate" />
+                <div class="divider-list-item"></div>
+                
+                <div class="col col-6">
+                  <label for="purchasedDate">Purchased Date</label>
+                  <input type="date" id="purchasedDate" name="purchasedDate" />
                 </div>
 
                 <div class="col col-6">
-                  <label for="startDate">Start Date</label>
-                  <input type="date" id="startDate" name="startDate" />
-                </div>
-
-                <div class="col col-6">
-                  <label for="endDate">End Date</label>
-                  <input type="date" id="endDate" name="endDate" />
+                  <label for="confirmedDate">Confirmed Date</label>
+                  <input type="date" id="confirmedDate" name="confirmedDate" />
                 </div>
 
                 <div class="divider-list-item"></div>
 
-                <div class="col col-4 box">
-                  <div class="title-detail">Expressions</div>
-                  <div class="quantity-detail">1.1K</div>
+                <div class="col col-6">
+                  <label for="userID">User ID</label>
+                  <input
+                    type="text"
+                    id="userID"
+                    name="userID"
+                    value="#DE.AGV274"
+                  />
                 </div>
-                <div class="col col-4 box">
-                  <div class="title-detail">Clicks</div>
-                  <div class="quantity-detail">568</div>
+
+                <div class="col col-6">
+                  <label for="fullName">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    value="Hoàng Văn Dũng"
+                  />
                 </div>
-              </div>
-            </div>
 
-            <div class="col col-container col2">
-              <div class="row">
-                <div class="col col-12 title">Media</div>
+                <div class="col col-6">
+                  <span class="label-name">Phone Number</span>
+                  <div class="label-in-input">
+                    <label for="phoneNumber">+84</label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      pattern="[0][0-9]{9}"
+                      value="0334542911"
+                    />
+                  </div>
+                </div>
 
-                <div class="upload">
-                  <img src="../../assets/images/popups-img-detail.png" width="458" height="813" id="profile-pic" />
-                  <!-- <label class="upload-label" for="upload">
-                          <img
-                          class="img-text"
-                          src="../../assets/images/upload-icon.svg"
-                          alt=""
-                          />
-                          <p class="text">Upload Popup media</p>
-                  </label> -->
-                  <input type="file" id="upload" class="upload-input" accept="image/*"/>
-              </div>
-
-                <div class="btn-list">
-                  <label class="btn-change" for="upload">Change</label>
-                  <button class="btn btn-kr float-end">kr</button>
-                  <button class="btn btn-en float-end">en</button>
-                  <button class="btn btn-vn float-end" autofocus>vn</button>
+                <div class="col col-6">
+                  <label for="userEmail">User Email</label>
+                  <input
+                    type="email"
+                    id="userEmail"
+                    name="userEmail"
+                    value="compdev@gmail.com"
+                  />
                 </div>
               </div>
             </div>
@@ -296,7 +296,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
-     <script src="./ambOrderPopups.js"></script>
+    <script src="./ambOrderTransactions.js"></script>
     <script src="../../assets/js/main.js"></script>
   </body>
 </html>

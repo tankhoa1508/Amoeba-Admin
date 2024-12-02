@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="../../assets/css/reset.css" />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
-    <link rel="stylesheet" href="./ambOrderPopups.css" />
+    <link rel="stylesheet" href="./ambOrderSupports.css" />
   </head>
   <body>
     <!-- Left Sidebar Navigation -->
@@ -55,7 +55,7 @@
     <!-- Header -->
     <header class="header">
       <div class="wrapper header-wrapper">
-        <div class="name-page">ambOrder Popups</div>
+        <div class="name-page">Support Tickets</div>
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
@@ -129,11 +129,11 @@
     <section class="mainContent">
       <div class="mainContent__container">
         <div class="top-elements">
-          <a href="./ambOrderPopups.html">
+          <a href="./ambOrderSupports.html">
             <img src="../../assets/images/back-icon.svg" alt="" />
           </a>
 
-          <a href="./ambOrderPopups.html">
+          <a href="./ambOrderSupports.html">
             <button class="btn-save">Save</button>
           </a>
         </div>
@@ -144,8 +144,8 @@
               <div class="top-col">
                 <div class="detail-avatar"></div>
                 <div>
-                  <div class="name">Beginner - Download Samp...</div>
-                  <div class="id">#PU.AGV274</div>
+                  <div class="name">Tickte #145</div>
+                  <div class="id">#SP.AGV274</div>
                   <div class="status bg-open">Open</div>
                 </div>
                 <img
@@ -166,119 +166,141 @@
 
               <div class="row row-cols-2">
                 <div class="col col-6">
-                  <label for="popupID">Popup ID</label>
+                  <label for="ticketID">Ticket ID</label>
                   <input
                     type="text"
-                    id="popupID"
-                    name="popupID"
-                    value="#OR.AGV274"
+                    id="ticketID"
+                    name="ticketID"
+                    value="#SP.AGV274"
                   />
                 </div>
 
                 <div class="col col-6">
-                  <label for="popupType">Popup Type</label> <br />
-                  <select name="popupType" id="popupType">
-                    <option value="sampleDownload">Sample Download</option>
-                    <option value="no">No</option>
-                  </select>
-                </div>
-
-                <div class="col col-12">
-                  <label for="popupTitle">Popup Title</label>
-                  <input
-                    type="text"
-                    id="popupTitle"
-                    name="popupTitle"
-                    placeholder="Enter here"
-                    value="Beginner - Download Sample Catalogs"
-                  />
-                </div>
-
-                <div class="col col-6">
-                  <label for="index">Index</label> <br />
-                  <select name="index" id="index">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
+                  <label for="status">Status</label>
+                  <select name="status" id="status">
+                    <option value="waiting">Waiting</option>
+                    <option value="unpublish">Unpublish</option>
                   </select>
                 </div>
 
                 <div class="col col-6">
-                  <label for="linkTo">Link To</label> <br />
-                  <select name="linkTo" id="linkTo">
-                    <option value="internal">Internal</option>
-                    <option value="no">No</option>
-                  </select>
+                  <label for="openDate">Open Date</label>
+                  <input type="date" id="openDate" name="openDate" />
                 </div>
 
                 <div class="col col-6">
-                  <label for="destination">Destination</label> <br />
-                  <select name="destination" id="destination">
-                    <option value="amoebaShare">Amoeba Share</option>
-                    <option value="no">No</option>
-                  </select>
-                </div>
-
-                <div class="col col-6">
-                  <label for="objectID">Object ID</label>
-                  <input
-                    type="text"
-                    id="objectID"
-                    name="objectID"
-                    placeholder="Enter ID here"
-                    value=""
-                  />
-                </div>
-
-                <div class="col col-6" style="width: 100%">
-                  <label for="createdDate">Created Date</label> <br />
-                  <input type="date" id="createdDate" name="createdDate" />
-                </div>
-
-                <div class="col col-6">
-                  <label for="startDate">Start Date</label>
-                  <input type="date" id="startDate" name="startDate" />
-                </div>
-
-                <div class="col col-6">
-                  <label for="endDate">End Date</label>
-                  <input type="date" id="endDate" name="endDate" />
+                  <label for="solvedDate">Solved Date</label>
+                  <input type="date" id="solvedDate" name="solvedDate" />
                 </div>
 
                 <div class="divider-list-item"></div>
 
-                <div class="col col-4 box">
-                  <div class="title-detail">Expressions</div>
-                  <div class="quantity-detail">1.1K</div>
+                <div class="col col-6">
+                  <label for="userID">User ID // Client ID</label>
+                  <input
+                    type="text"
+                    id="userID"
+                    name="userID"
+                    value="#US.AGV274"
+                  />
                 </div>
-                <div class="col col-4 box">
-                  <div class="title-detail">Clicks</div>
-                  <div class="quantity-detail">568</div>
+
+                <div class="col col-6">
+                  <label for="userName">User Name</label>
+                  <input
+                    type="text"
+                    id="userName"
+                    name="userName"
+                    value="김익용"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="userEmail">User Email</label>
+                  <input
+                    type="email"
+                    id="userEmail"
+                    name="userEmail"
+                    value="fremd@gmail.com"
+                  />
+                </div>
+                <div class="col col-6">
+                  <span class="label-name">Phone Number</span>
+                  <div class="label-in-input">
+                    <label for="phoneNumber">+84</label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      pattern="[0][0-9]{9}"
+                      value="0334542911"
+                    />
+                  </div>
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="shopName">Shop Name</label>
+                  <input
+                    type="text"
+                    id="shopName"
+                    name="shopName"
+                    value="김익용한국"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="shopEmail">Shop Email</label>
+                  <input
+                    type="email"
+                    id="shopEmail"
+                    name="shopEmail"
+                    value="kimoko299@gmail.com"
+                  />
+                </div>
+                <div class="col col-6">
+                  <span class="label-name">Shop Hotline</span>
+                  <div class="label-in-input">
+                    <label for="shopHotline">+82</label>
+                    <input
+                      type="tel"
+                      id="shopHotline"
+                      name="shopHotline"
+                      pattern="[0][0-9]{9}"
+                      value="1097660896"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="col col-container col2">
               <div class="row">
-                <div class="col col-12 title">Media</div>
+                <div class="col col-12 title">Message Information</div>
 
-                <div class="upload">
-                  <img src="../../assets/images/popups-img-detail.png" width="458" height="813" id="profile-pic" />
-                  <!-- <label class="upload-label" for="upload">
-                          <img
-                          class="img-text"
-                          src="../../assets/images/upload-icon.svg"
-                          alt=""
-                          />
-                          <p class="text">Upload Popup media</p>
-                  </label> -->
-                  <input type="file" id="upload" class="upload-input" accept="image/*"/>
-              </div>
+                <div class="col col-12">
+                  <label for="category">Category</label>
+                  <input
+                    type="text"
+                    id="category"
+                    name="category"
+                    value="Account Authentication"
+                  />
+                </div>
 
-                <div class="btn-list">
-                  <label class="btn-change" for="upload">Change</label>
-                  <button class="btn btn-kr float-end">kr</button>
-                  <button class="btn btn-en float-end">en</button>
-                  <button class="btn btn-vn float-end" autofocus>vn</button>
+                <div class="col col-12">
+                  <label for="supportMessage">Support Message</label>
+
+                  <textarea
+                    id="supportMessage"
+                    name="supportMessage"
+                    rows="4"
+                    cols="50"
+                  >
+establishment that specializes in serving traditional and contemporary Korean cuisine. Known for its emphasis on fresh ingredients, distinct flavors, and a balance of various food groups, Korean restaurants offer a wide array of dishes. These include bibimbap (a mixed rice dish), kimchi (fermented vegetables), bulgogi (marinated beef barbecue), and a variety of side dishes known as banchan.
+                    </textarea
+                  >
                 </div>
               </div>
             </div>
@@ -296,7 +318,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
     <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
-     <script src="./ambOrderPopups.js"></script>
+    <script src="./ambOrderSupports.js"></script>
     <script src="../../assets/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,22 @@
+/* Sidebar Navigation */
+
+.supports .sidebar-nav__link img.active {
+  display: block;
+}
+
+.supports .sidebar-nav__link img.non-active {
+  display: none;
+}
+
+/* End Sidebar */
+
+/* Header */
+
+/* End Header */
+
+/* Main Content */
+/* Datatable */
+
+
+/* Detail Column */
+/* End Main Content */

@@ -32,10 +32,12 @@
   --processing: #af52de;
   --delivering: #34c759;
   --open: #34c759;
+  --success: #34c759;
   --pick-upWaiting: #32ade6;
   --completed: #007aff;
   --solved: #007aff;
   --canceled: #ff3b30;
+  --failed: #ff3b30;
   --scheduled: #af52de;
   --draft: #ffcc00;
   --waiting: #ffcc00;
@@ -51,6 +53,10 @@
 
 .bg-active {
   background-color: var(--active);
+}
+
+.bg-success {
+  background-color: var(--success);
 }
 
 .bg-nearlyExpired {
@@ -115,6 +121,10 @@
 
 .bg-completed {
   background-color: var(--completed);
+}
+
+.bg-failed {
+  background-color: var(--failed);
 }
 
 body {
@@ -621,79 +631,12 @@ div.dt-container div.dt-search input {
 }
 
 /* Xử lý bỏ icon sort */
-.mainContent table.dataTable thead > tr > .th-userID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-phone span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-store span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-publishTime span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-joinedTime span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-sponsored span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-products span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-catalogs span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-productID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-productName span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-price span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-sku span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-createdDate span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-catalogID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-catalogTitle span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-expiredDate span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-link span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-orders span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-orderID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-subTotal span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-referralID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-shippingFee span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-popupID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-popupTitle span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-index span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-linkTo span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-duration span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-reportID span.dt-column-order,
-.mainContent
-  table.dataTable
-  thead
-  > tr
-  > .th-reportQuantity
-  span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-reason span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-latestDate span.dt-column-order,
-.mainContent
-  table.dataTable
-  thead
-  > tr
-  > .th-notificationID
-  span.dt-column-order,
-.mainContent
-  table.dataTable
-  thead
-  > tr
-  > .th-notificationTitle
-  span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-typeAlert span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-loop span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-sendDate span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-messageID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-message span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-shopName span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-shopEmail span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-openDate span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-solveDate span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-pluginID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-pluginTitle span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-devID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-installed span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-paid span.dt-column-order,
-.mainContent
-  table.dataTable
-  thead
-  > tr
-  > .th-launchedDate
-  span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-subscriptionID span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-purchasedDate span.dt-column-order,
-.mainContent table.dataTable thead > tr > .th-expiryDate span.dt-column-order {
+.mainContent table.dataTable thead > tr > th:not(.th-status):not(.th-type):not(.th-orderType) span.dt-column-order
+ {
   display: none;
 }
+/*  */
+
 
 .mainContent table.dataTable tr {
   border-radius: 8px;
@@ -785,7 +728,9 @@ div.dt-container div.dt-layout-full > *:only-child {
 .mainContent table.dataTable .waiting,
 .mainContent table.dataTable .pending,
 .mainContent table.dataTable .nearlyExpired,
-.mainContent table.dataTable .expired  {
+.mainContent table.dataTable .expired,
+.mainContent table.dataTable .success,
+.mainContent table.dataTable .failed {
   font-family: BOLD;
   /* font-size: 12px; */
   font-weight: 800;
@@ -852,6 +797,14 @@ div.dt-container div.dt-layout-full > *:only-child {
 
 .mainContent table.dataTable .expired {
   color: var(--expired);
+}
+
+.mainContent table.dataTable .success {
+  color: var(--success);
+}
+
+.mainContent table.dataTable .failed {
+  color: var(--failed);
 }
 
 .mainContent .dt-container .dt-info {
@@ -1561,14 +1514,14 @@ div.dt-container div.dt-layout-full > *:only-child {
 
 /* Table Detail */
 .mainContent .col-container .table-detail {
-  background: #FBFBFB ;
-  border: 1px solid #E9EBEE;
+  background: #fbfbfb;
+  border: 1px solid #e9ebee;
   padding: 4px 3px;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2px;
 
-border-radius: 8px;
+  border-radius: 8px;
 }
 
 .mainContent .col-container .table-detail div {

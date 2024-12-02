@@ -1,0 +1,27 @@
+/* Sidebar Navigation */
+
+.transactions .sidebar-nav__link img.active {
+  display: block;
+}
+
+.transactions .sidebar-nav__link img.non-active {
+  display: none;
+}
+
+/* End Sidebar */
+
+/* Header */
+
+/* End Header */
+
+/* Main Content */
+/* Datatable */
+
+
+/* Detail Column */
+.mainContent .detail-container .top-col .name {
+  font-family: REGULAR;
+  font-weight: 100;
+}
+
+/* End Main Content */
