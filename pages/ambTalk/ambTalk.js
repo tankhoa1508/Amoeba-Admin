@@ -4,7 +4,7 @@ let ambTalkControlBoardCourses = [
       text: "ambTalk Clients",
       icon: "usersBold.svg",
       class: "clients",
-      href: "#",
+      href: "../ambTalk Clients/ambTalkClients.html",
     },
     {
       text: "ambOrder Notifications",

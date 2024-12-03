@@ -32,27 +32,27 @@ let leftSidebarAmbTalkCourses = [
     iconActive: "ambTalk-active.png",
     href: "../ambTalk/ambTalk.html",
   },
-  // {
-  //   name: "Members",
-  //   icon: "Members.png",
-  //   class: "members",
-  //   iconActive: "Members-active.png",
-  //   href: "#",
-  // },
-  // {
-  //   name: "Supports",
-  //   icon: "Supports.png",
-  //   class: "supports",
-  //   iconActive: "Supports-active.png",
-  //   href: "#",
-  // },
-  // {
-  //   name: "Settings",
-  //   icon: "Settings.png",
-  //   class: "settings",
-  //   iconActive: "Settings-active.png",
-  //   href: "#",
-  // },
+  {
+    name: "Members",
+    icon: "Members.png",
+    class: "members",
+    iconActive: "Members-active.png",
+    href: "../ambOrder Members/ambOrderMembers.html",
+  },
+  {
+    name: "Supports",
+    icon: "Supports.png",
+    class: "supports",
+    iconActive: "Supports-active.png",
+    href: "../ambOrder Supports/ambOrderSupports.html",
+  },
+  {
+    name: "Settings",
+    icon: "Settings.png",
+    class: "settings opacity-50 pe-none",
+    iconActive: "Settings-active.png",
+    href: "#",
+  },
 ];
 
 // rightSidebarAmbOrder ARRAY
@@ -185,7 +185,7 @@ let rightSidebarAmbTalkCourses = [
     icon: "Clients.png",
     class: "clients",
     iconActive: "Clients-active.png",
-    href: "#",
+    href: "../../pages/ambTalk Clients/ambTalkClients.html",
   },
   {
     name: "Alerts",

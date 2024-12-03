@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amoeba Admin</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="./ambTalkClients.css" />
+  </head>
+  <body>
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+      <div class="wrapper sidebar-wrapper">
+        <div class="logo">
+          <a href="../ambOrder/ambOrder.html">
+            <img
+              src="../../assets/images/logo-amoeba.png"
+              alt=""
+              width="33.53"
+              height="38"
+            />
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list leftSidebarAmbTalk p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Left Sidebar Navigation -->
+
+    <!-- Right Sidebar Navigation -->
+    <div class="sidebar sidebar2">
+      <div class="wrapper sidebar-wrapper">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list rightSidebarAmbTalk p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Right Sidebar Navigation -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <div class="name-page">ambTalk Clients</div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <div class="subsearch-container">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-nav__subsearch"
+                />
+                <img
+                  src="../../assets/images/search-icon.svg"
+                  class="subsearch-icon"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="noti-dropdown">
+                <button class="noti-dropbtn" onclick="notiDropdown()">
+                  <img
+                    src="../../assets/images/noti-header.svg"
+                    class="noti-header"
+                    alt=""
+                  />
+                  <img
+                    src="../../assets/images/noti-mark-header.svg"
+                    class="noti-mark-header"
+                    alt=""
+                  />
+                </button>
+                <div class="noti-dropdown-content" id="noti-Dropdown">
+                  <a href="#">Lorem ipsum dolor sit amet.</a>
+                  <a href="#">Lorem, ipsum dolor.</a>
+                  <a href="#"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus, reiciendis.</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="language-dropdown">
+                <button class="language-dropbtn" onclick="languageDropdown()">
+                  <img
+                    src="../../assets/images/language.svg"
+                    class="language-header"
+                    alt=""
+                  />
+                </button>
+                <div class="language-dropdown-content" id="language-Dropdown">
+                  <a href="#">English</a>
+                  <a href="#">Vietnamese</a>
+                  <a href="#">Korean</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <img
+                src="../../assets/images/avatar.png"
+                class="avatar-header"
+                alt=""
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <section class="mainContent">
+      <div class="mainContent__container">
+        <div class="top-elements">
+          <a href="./ambTalkClients.html">
+            <img src="../../assets/images/back-icon.svg" alt="" />
+          </a>
+
+          <a href="./ambTalkClients.html">
+            <button class="btn-save">Save</button>
+          </a>
+        </div>
+
+        <div class="detail-container">
+          <div class="row row-container">
+            <div class="col col-container">
+              <div class="top-col">
+                <div class="detail-avatar"></div>
+                <div>
+                  <div class="name">Gene & Jean</div>
+                  <div class="id">#CL.AGV274</div>
+                  <div class="status bg-active">Active</div>
+                </div>
+                <img
+                  class="img1st"
+                  src="../../assets/images/top-detail-icon.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+                <img
+                  class="img2nd"
+                  src="../../assets/images/top-detail-icon2.png"
+                  width="40"
+                  height="40"
+                  alt=""
+                />
+              </div>
+
+              <div class="row row-cols-2">
+                <div class="col col-6">
+                  <label for="clientID">Client ID</label>
+                  <input
+                    type="text"
+                    id="clientID"
+                    name="clientID"
+                    value="#CL.AGV274"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="companyName">Company Name</label>
+                  <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    value="Gene & Jean"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <span class="label-name">Company Hotline</span>
+                  <div class="label-in-input">
+                    <label for="companyHotline">+82</label>
+                    <input
+                      type="tel"
+                      id="companyHotline"
+                      name="companyHotline"
+                      pattern="[0][0-9]{9}"
+                      value="1097660896"
+                    />
+                  </div>
+                </div>
+
+                <div class="col col-6">
+                  <label for="companyEmail">Company Email</label>
+                  <input
+                    type="email"
+                    id="companyEmail"
+                    name="companyEmail"
+                    value="gene.jean@gmail.com"
+                  />
+                </div>
+                
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="messages">Messages</label>
+                  <input
+                    class="fw-bold"
+                    type="text"
+                    id="messages"
+                    name="messages"
+                    value="116"
+                  />
+                </div>
+
+                <div class="col col-6">
+                  <label for="members">Members</label>
+                  <input
+                    class="fw-bold"
+                    type="text"
+                    id="members"
+                    name="members"
+                    value="5"
+                  />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-6">
+                  <label for="joinedDate">Joined Date</label>
+                  <input type="date" id="joinedDate" name="joinedDate" />
+                </div>
+
+                <div class="col col-6">
+                  <label for="status">Status</label>
+                  <select name="status" id="status">
+                    <option value="active">Active</option>
+                    <option value="unpublish">Unpublish</option>
+                  </select>
+                </div>
+
+                <div class="col col-6">
+                  <label for="serviceType">Service Type</label>
+                  <select name="serviceType" id="serviceType">
+                    <option value="free">Free</option>
+                    <option value="no">No</option>
+                    <option value="daily">Daily</option>
+                  </select>
+                </div>
+
+                <div class="col col-6 opacity-50 pe-none">
+                  <label for="expiryDate">Expiry Date</label>
+                  <input type="date" id="expiryDate" name="expiryDate" />
+                </div>
+
+                <div class="divider-list-item"></div>
+
+                <div class="col col-4 box">
+                  <div class="title-detail">Products</div>
+                  <div class="quantity-detail">156</div>
+                </div>
+                <div class="col col-4 box">
+                  <div class="title-detail">Catalogs</div>
+                  <div class="quantity-detail">14</div>
+                </div>
+                <div class="col col-4 box">
+                  <div class="title-detail">Orders</div>
+                  <div class="quantity-detail">59</div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col col-container">
+              <div class="row row-cols-2">
+                <div class="col col-12 title mb-2">Member List</div>
+
+                <div class="col col-12">
+                  <label>Member</label>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">#US.AGV274</div>
+                    <div class="col-4">gene.jean@gmail.com</div>
+                    <div class="col-4 fw-bold" style="color: #32ADE6;">Owner</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">#US.AGV274</div>
+                    <div class="col-4">gene.jean@gmail.com</div>
+                    <div class="col-4 fw-bold" style="color: #5856D6;">Member</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">#US.AGV274</div>
+                    <div class="col-4">gene.jean@gmail.com</div>
+                    <div class="col-4 fw-bold" style="color: #5856D6;">Member</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">#US.AGV274</div>
+                    <div class="col-4">gene.jean@gmail.com</div>
+                    <div class="col-4 fw-bold" style="color: #5856D6;">Member</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">#US.AGV274</div>
+                    <div class="col-4">gene.jean@gmail.com</div>
+                    <div class="col-4 fw-bold" style="color: #5856D6;">Member</div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col col-container">
+              <div class="row row-cols-2">
+                <div class="col col-12 title mb-2">Connections</div>
+
+                <div class="col col-12">
+                  <label>Social Message Channels</label>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">Facebook</div>
+                    <div class="col-4">fb.ahsf8as7fJAF23BMNB</div>
+                    <div class="col-4 fw-bold text-connected">Connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">WhatsApp</div>
+                    <div class="col-4">ws.bgasgasga87678asgag</div>
+                    <div class="col-4 fw-bold text-connected">Connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">Instagram</div>
+                    <div class="col-4">in.Unagas7g6qkjbagasgasg</div>
+                    <div class="col-4 fw-bold text-connected">Connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">Zalo</div>
+                    <div class="col-4">zl.sagasg8273t2jbasfbasgasg</div>
+                    <div class="col-4 fw-bold text-notConnected">Not connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">LINE</div>
+                    <div class="col-4">ln.sfasg6as9g8a8sg6a8sg</div>
+                    <div class="col-4 fw-bold text-notConnected">Not connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12 ">
+                  <div class="row table-detail">
+                    <div class="col-4">KaKaoTalk</div>
+                    <div class="col-4">kk.àgas7g6asgas7ga7sg9a7s</div>
+                    <div class="col-4 fw-bold text-notConnected">Not connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12 mb-3">
+                  <div class="row table-detail">
+                    <div class="col-4">Chat Widget</div>
+                    <div class="col-4">amoeba.site</div>
+                    <div class="col-4 fw-bold text-connected">Connected</div>
+                  </div>
+                </div>
+                
+
+                <div class="col col-12">
+                  <label>Shop Platforms</label>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">WordPress</div>
+                    <div class="col-4">wp.ágasg9a6sg987asgasg</div>
+                    <div class="col-4 fw-bold text-connected">Connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">Shopify</div>
+                    <div class="col-4">spf.ávava6sv87a98v7as7va7</div>
+                    <div class="col-4 fw-bold text-connected">Connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">Cafe24</div>
+                    <div class="col-4">in.Unagas7g6qkjbagasgasg</div>
+                    <div class="col-4 fw-bold text-connected">Connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">Haranvan</div>
+                    <div class="col-4">zl.sagasg8273t2jbasfbasgasg</div>
+                    <div class="col-4 fw-bold text-notConnected">Not connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12">
+                  <div class="row table-detail">
+                    <div class="col-4">Sapo</div>
+                    <div class="col-4">ln.sfasg6as9g8a8sg6a8sg</div>
+                    <div class="col-4 fw-bold text-notConnected">Not connected</div>
+                  </div>
+                </div>
+
+                <div class="col col-12 ">
+                  <div class="row table-detail">
+                    <div class="col-4">KiotViet</div>
+                    <div class="col-4">kk.àgas7g6asgas7ga7sg9a7s</div>
+                    <div class="col-4 fw-bold text-notConnected">Not connected</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Content -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
+    <script src="./ambTalkClients.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>

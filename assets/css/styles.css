@@ -33,7 +33,10 @@
   --delivering: #34c759;
   --open: #34c759;
   --success: #34c759;
+  --connected: #34C759;
   --pick-upWaiting: #32ade6;
+  --owner: #32ade6;
+  --member: #5856D6;
   --completed: #007aff;
   --solved: #007aff;
   --canceled: #ff3b30;
@@ -43,6 +46,7 @@
   --waiting: #ffcc00;
   --pending: #aeaeb2;
   --nearlyExpired: #ff9500;
+  --notConnected: #C7C7CC;
 }
 
 * {
@@ -133,6 +137,106 @@ ul {
 
 .bg-failed {
   background-color: var(--failed);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-dark-orange {
+  color: var(--dark-orange);
+}
+
+.text-active {
+  color: var(--active);
+}
+
+.text-blocked {
+  color: var(--blocked);
+}
+
+.text-expired {
+  color: var(--expired);
+}
+
+.text-inactive {
+  color: var(--inactive);
+}
+
+.text-new {
+  color: var(--new);
+}
+
+.text-processing {
+  color: var(--processing);
+}
+
+.text-delivering {
+  color: var(--delivering);
+}
+
+.text-open {
+  color: var(--open);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-pick-upWaiting {
+  color: var(--pick-upWaiting);
+}
+
+.text-owner {
+  color: var(--owner);
+}
+
+.text-member {
+  color: var(--member);
+}
+
+.text-completed {
+  color: var(--completed);
+}
+
+.text-solved {
+  color: var(--solved);
+}
+
+.text-canceled {
+  color: var(--canceled);
+}
+
+.text-failed {
+  color: var(--failed);
+}
+
+.text-scheduled {
+  color: var(--scheduled);
+}
+
+.text-draft {
+  color: var(--draft);
+}
+
+.text-waiting {
+  color: var(--waiting);
+}
+
+.text-pending {
+  color: var(--pending);
+}
+
+.text-pending {
+  color: var(--pending);
+}
+
+.text-notConnected {
+  color: var(--notConnected);
+}
+
+.text-connected {
+  color: var(--connected);
 }
 
 body {
@@ -999,7 +1103,8 @@ div.dt-container div.dt-layout-full > *:only-child {
 
 .mainContent .row-container .col-container {
   max-width: 492px;
-  height: 770px;
+  /* height: 770px; */
+  height: 81vh;
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 0px 4px 24px 0px #00000014;
@@ -1544,26 +1649,36 @@ div.dt-container div.dt-layout-full > *:only-child {
 
 /* Table Detail */
 .mainContent .col-container .table-detail {
+  width: 100%;
   background: #fbfbfb;
   border: 1px solid #e9ebee;
-  padding: 4px 3px;
+  padding: 8px 16px;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2px;
 
   border-radius: 8px;
+  font-size: 14px;
+}
+
+.mainContent .col-container .table-detail:hover {
+  border: 1px solid var(--primary);
 }
 
 .mainContent .col-container .table-detail div {
-  text-align: center;
+  text-align: left;
+  padding: 0;
 }
 
+
 .mainContent .col-container .table-detail div:last-child {
+  margin-left: auto;
   text-align: right;
 }
 
 .mainContent .col-container .table-detail div:first-child {
   text-align: left;
+  max-width: 110px;
 }
 /* End Table Detail */
 

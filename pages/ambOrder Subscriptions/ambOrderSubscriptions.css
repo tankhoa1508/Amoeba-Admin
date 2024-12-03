@@ -116,4 +116,8 @@
   line-height: 57px;
 }
 
+
+.mainContent .col-container .table-detail div {
+  text-align: center;
+}
 /* End Main Content */
