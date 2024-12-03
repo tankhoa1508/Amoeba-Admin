@@ -51,7 +51,7 @@ let ambOrderControlBoardCourses = [
     {
       text: "ambOrder Packages",
       icon: "packagesBold.svg",
-      class: "packages",
+      class: "packages opacity-50 pe-none",
       href: "../ambOrder Packages/ambOrderPackages.html",
     },
     {

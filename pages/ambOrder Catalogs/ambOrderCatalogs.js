@@ -2,7 +2,7 @@
 let catalogsCourses = [
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -14,7 +14,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -26,7 +26,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -38,7 +38,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -50,7 +50,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -62,7 +62,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -74,7 +74,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -86,7 +86,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -98,7 +98,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -110,7 +110,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -122,7 +122,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -134,7 +134,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -146,7 +146,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -158,7 +158,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -170,7 +170,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -182,7 +182,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -194,7 +194,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -206,7 +206,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -218,7 +218,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -230,7 +230,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -242,7 +242,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -254,7 +254,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -266,7 +266,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -278,7 +278,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -290,7 +290,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -302,7 +302,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -314,7 +314,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -326,7 +326,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -338,7 +338,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -350,7 +350,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -362,7 +362,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -374,7 +374,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -386,7 +386,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -398,7 +398,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -410,7 +410,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -422,7 +422,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -434,7 +434,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -446,7 +446,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -458,7 +458,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -470,7 +470,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -482,7 +482,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -494,7 +494,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -506,7 +506,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -518,7 +518,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -530,7 +530,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -542,7 +542,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -554,7 +554,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -566,7 +566,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -578,7 +578,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -590,7 +590,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -602,7 +602,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -614,7 +614,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -626,7 +626,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -638,7 +638,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -650,7 +650,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV274",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV223",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",
@@ -662,7 +662,7 @@ let catalogsCourses = [
     },
     {
       catalogID: "#CA.AGV300",
-      catalogTitle: "Summer 2024 Sale Collections, Beac...",
+      catalogTitle: "Summer Sale 50% to All member on the Ha Long Bay start ship tour super luxury",
       userID: "#US.AGV250",
       expiredDate: "22/10/2024",
       createdDate: "01/01/2024",

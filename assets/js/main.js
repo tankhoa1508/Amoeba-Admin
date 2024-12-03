@@ -32,27 +32,27 @@ let leftSidebarAmbTalkCourses = [
     iconActive: "ambTalk-active.png",
     href: "../ambTalk/ambTalk.html",
   },
-  {
-    name: "Members",
-    icon: "Members.png",
-    class: "members",
-    iconActive: "Members-active.png",
-    href: "#",
-  },
-  {
-    name: "Supports",
-    icon: "Supports.png",
-    class: "supports",
-    iconActive: "Supports-active.png",
-    href: "#",
-  },
-  {
-    name: "Settings",
-    icon: "Settings.png",
-    class: "settings",
-    iconActive: "Settings-active.png",
-    href: "#",
-  },
+  // {
+  //   name: "Members",
+  //   icon: "Members.png",
+  //   class: "members",
+  //   iconActive: "Members-active.png",
+  //   href: "#",
+  // },
+  // {
+  //   name: "Supports",
+  //   icon: "Supports.png",
+  //   class: "supports",
+  //   iconActive: "Supports-active.png",
+  //   href: "#",
+  // },
+  // {
+  //   name: "Settings",
+  //   icon: "Settings.png",
+  //   class: "settings",
+  //   iconActive: "Settings-active.png",
+  //   href: "#",
+  // },
 ];
 
 // rightSidebarAmbOrder ARRAY
@@ -109,7 +109,7 @@ let rightSidebarAmbOrderCourses = [
   {
     name: "Packages",
     icon: "Packages.png",
-    class: "packages",
+    class: "packages opacity-50 pe-none",
     iconActive: "Packages-active.png",
     href: "../ambOrder Packages/ambOrderPackages.html",
   },
@@ -172,7 +172,7 @@ let rightSidebarAmbOrderCourses = [
   {
     name: "Settings",
     icon: "Settings.png",
-    class: "settings",
+    class: "settings opacity-50 pe-none",
     iconActive: "Settings-active.png",
     href: "../ambOrder Settings/ambOrderSettings.html",
   },
@@ -190,21 +190,21 @@ let rightSidebarAmbTalkCourses = [
   {
     name: "Alerts",
     icon: "Alerts.png",
-    class: "alerts",
+    class: "alerts opacity-50 pe-none",
     iconActive: "Alerts-active.png",
     href: "#",
   },
   {
     name: "Packages",
     icon: "Packages.png",
-    class: "packages",
+    class: "packages opacity-50 pe-none",
     iconActive: "Packages-active.png",
     href: "#",
   },
   {
     name: "Members",
     icon: "Members.png",
-    class: "members",
+    class: "members opacity-50 pe-none",
     iconActive: "Members-active.png",
     href: "#",
   },

@@ -9,13 +9,13 @@ let ambTalkControlBoardCourses = [
     {
       text: "ambOrder Notifications",
       icon: "notificationsBold.svg",
-      class: "notifications",
+      class: "notifications opacity-50 pe-none",
       href: "#",
     },
     {
       text: "ambOrder Packages",
       icon: "packagesBold.svg",
-      class: "packages",
+      class: "packages opacity-50 pe-none",
       href: "#",
     },
   ];

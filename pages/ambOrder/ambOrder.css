@@ -1,15 +1,6 @@
 
 /* Sidebar Navigation */
 
-.sidebar2 {
-    height: 1044px;
-}
-
-.sidebar2 {
-    position: absolute;
-    margin-top: 74px;
-    margin-left: 94px;
-}
 
 /* divider */
 .messages::after,
