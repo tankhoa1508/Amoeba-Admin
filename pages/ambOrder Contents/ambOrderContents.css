@@ -164,7 +164,12 @@ overflow: hidden;
 position: relative;
 background-color: #D9D9D9;
 border: none;
+transition: 0.3s;
 /* margin: 0 auto; */
+}
+
+.tabcontent .section-item:hover {
+  transform: scale(1.05);
 }
 
 .tabcontent .section-item .item-tag {

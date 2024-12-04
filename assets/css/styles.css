@@ -1450,6 +1450,12 @@ div.dt-container div.dt-layout-full > *:only-child {
 /* Product list */
 .mainContent .col-container .product-card {
   margin-bottom: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mainContent .col-container .product-card:hover {
+  transform: scale(1.05);
 }
 
 .mainContent .col-container .product-card .card-img {
