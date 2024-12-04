@@ -104,7 +104,7 @@ let rightSidebarAmbOrderCourses = [
     icon: "Contents.png",
     class: "contents",
     iconActive: "Contents-active.png",
-    href: "../ambOrder Contents/ambOrderContentss.html",
+    href: "../ambOrder Contents/ambOrderContents.html",
   },
   {
     name: "Packages",

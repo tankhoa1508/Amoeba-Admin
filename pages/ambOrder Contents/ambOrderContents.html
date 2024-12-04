@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amoeba Admin</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="../../assets/images/favicon.png" type="image/png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="./ambOrderContents.css" />
+  </head>
+  <body>
+    <!-- Left Sidebar Navigation -->
+    <div class="sidebar">
+      <div class="wrapper sidebar-wrapper">
+        <div class="logo">
+          <a href="../ambOrder/ambOrder.html">
+            <img
+              src="../../assets/images/logo-amoeba.png"
+              alt=""
+              width="33.53"
+              height="38"
+            />
+          </a>
+        </div>
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list leftSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Left Sidebar Navigation -->
+
+    <!-- Right Sidebar Navigation -->
+    <div class="sidebar sidebar2">
+      <div class="wrapper sidebar-wrapper">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__list rightSidebarAmbOrder p-0"></ul>
+        </nav>
+      </div>
+    </div>
+    <!-- End Right Sidebar Navigation -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <div class="name-page">ambOrder Content</div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <div class="subsearch-container">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="header-nav__subsearch"
+                />
+                <img
+                  src="../../assets/images/search-icon.svg"
+                  class="subsearch-icon"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="noti-dropdown">
+                <button class="noti-dropbtn" onclick="notiDropdown()">
+                  <img
+                    src="../../assets/images/noti-header.svg"
+                    class="noti-header"
+                    alt=""
+                  />
+                  <img
+                    src="../../assets/images/noti-mark-header.svg"
+                    class="noti-mark-header"
+                    alt=""
+                  />
+                </button>
+                <div class="noti-dropdown-content" id="noti-Dropdown">
+                  <a href="#">Lorem ipsum dolor sit amet.</a>
+                  <a href="#">Lorem, ipsum dolor.</a>
+                  <a href="#"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus, reiciendis.</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <div class="language-dropdown">
+                <button class="language-dropbtn" onclick="languageDropdown()">
+                  <img
+                    src="../../assets/images/language.svg"
+                    class="language-header"
+                    alt=""
+                  />
+                </button>
+                <div class="language-dropdown-content" id="language-Dropdown">
+                  <a href="#">English</a>
+                  <a href="#">Vietnamese</a>
+                  <a href="#">Korean</a>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <img
+                src="../../assets/images/avatar.png"
+                class="avatar-header"
+                alt=""
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Content -->
+    <section class="mainContent">
+      <div class="mainContent__container mt-4 ms-4">
+        <div class="page-tab">
+          <div class="fw-bold mb-3 ms-3" style="color: #b6b6b6">Page</div>
+          <button class="page-tablinks active">Homepage</button>
+          <button class="page-tablinks pe-none">Products</button>
+          <button class="page-tablinks pe-none">Catalogs</button>
+          <button class="page-tablinks pe-none">Orders</button>
+          <button class="page-tablinks pe-none">Customers</button>
+        </div>
+
+        <div class="tab">
+          <div class="fw-bold mb-3 ms-3" style="color: #b6b6b6">Section</div>
+          <button
+            class="tablinks"
+            onclick="openBoard(event, 'banner')"
+            id="defaultOpen"
+          >
+            Banner
+          </button>
+          <button class="tablinks" onclick="openBoard(event, 'tips')">
+            Tips
+          </button>
+          <button class="tablinks" onclick="openBoard(event, 'process')">
+            Process
+          </button>
+        </div>
+
+        <div id="banner" class="tabcontent">
+          <h3 class="fw-bold">Banner</h3>
+          <a href="./BannerContentsCreate.html" class="create-section"
+            >Create new Banner</a
+          >
+          <ul class="row mt-4">
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-1.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 1</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-2.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 2</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-3.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 3</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-4.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 4</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-5.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 5</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-6.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 6</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-7.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 7</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-8.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 8</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-9.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 9</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-10.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 10</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-11.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 11</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./BannerContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/banner-item-12.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Guide 12</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="tips" class="tabcontent">
+          <h3 class="fw-bold">Tips</h3>
+          <a href="./TipsContentsCreate.html" class="create-section"
+            >Create new Tips</a
+          >
+          <ul class="row mt-4">
+            <li class="col col-4">
+              <a href="./TipsContentsDetail.html">
+                <div class="section-item">
+                  <div class="tips-content">
+                    You can have your catalog displayed optionally at the amoeba avenue
+                  </div>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Tip 1</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./TipsContentsDetail.html">
+                <div class="section-item">
+                    <div class="tips-content">
+                        Complete your store information settings so customer can contact you
+                      </div>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Tip 2</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./TipsContentsDetail.html">
+                <div class="section-item">
+                    <div class="tips-content">
+                        Connect to your Google Account to easily Back-up and Restore data
+                      </div>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Tip 3</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="col col-4">
+              <a href="./TipsContentsDetail.html">
+                <div class="section-item">
+                    <div class="tips-content">
+                        If you have any questions, or concerns, please contact us via <span class="text-primary">contact@amoeba.group</span> or phone number <span class="text-primary">02835357785</span>
+                      </div>
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Beginner Tip 4</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="process" class="tabcontent">
+          <h3 class="fw-bold">Process</h3>
+          <a href="./ProcessContentsCreate.html" class="create-section"
+            >Create new Process</a
+          >
+          <ul class="row mt-4">
+            <li class="col col-4">
+              <a href="./ProcessContentsDetail.html">
+                <div class="section-item">
+                  <img
+                    src="../../assets/images/process-item-1.png"
+                    width="100%"
+                    alt=""
+                  />
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-1.svg"
+                      class="icon-section-1"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-1a.svg"
+                      class="icon-section-1a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-2.svg"
+                      class="icon-section-2"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-2a.svg"
+                      class="icon-section-2a"
+                      alt=""
+                    />
+                  </a>
+
+                  <a href="#">
+                    <img
+                      src="../../assets/images/icon-section-3.svg"
+                      class="icon-section-3"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/images/icon-section-3a.svg"
+                      class="icon-section-3a"
+                      alt=""
+                    />
+                  </a>
+                  <div class="item-tag">Process Tip 1</div>
+                </div>
+              </a>
+            </li>
+
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Content -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="./ambOrderContents.js"></script>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>
