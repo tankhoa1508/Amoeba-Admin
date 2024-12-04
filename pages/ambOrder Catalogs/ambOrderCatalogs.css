@@ -78,6 +78,7 @@
   align-items: center;
   margin-bottom: 8px;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .mainContent .col-container .category-item .name {
@@ -121,6 +122,33 @@
 
 .mainContent .row-container .col3 .title {
   margin-bottom: 12px;
+}
+
+/* sort product */
+.btn-list {
+  display: flex;
+  width: 100%;
+}
+
+.btn-list .radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.btn-list .input-container {
+  height: auto;
+  width: auto;
+  margin-bottom: 8px;
+}
+
+.btn-list .input-container .radio-tile {
+  padding: 7px 12px;
+  margin-right: 8px;
+}
+
+.btn-list input:checked+.radio-tile {
+  transform: scale(1);
 }
 
 /* End Main Content */
