@@ -317,10 +317,45 @@ lastLayout.append(function () {
   return firstLayout.children(".dt-layout-start");
 });
 
-
+// set item number of table
 const options = document.querySelectorAll(".mainContent .dt-input option");
 const labels = ["5 per page", "10 per page", "25 per page", "50 per page"];
 
 options.forEach((option, index) => {
   option.innerHTML = labels[index];
 });
+
+// Button Save: hiện thông báo
+document.querySelector('.btn-topElement').addEventListener('click', function() {
+  var notification = document.querySelector('.noti-success');
+  var progressBar = document.querySelector('.progress-bar');
+  
+  // Hiển thị thông báo
+  notification.classList.remove('hidden');
+  notification.classList.add('show');
+  
+  // Reset thanh tiến độ (đặt lại chiều rộng thành 100%)
+  progressBar.style.width = '0%';
+  
+  // Tạm thời xóa transition để reset hiệu ứng
+  progressBar.style.transition = 'none';
+  
+  // Sau 10ms, chúng ta thêm lại transition và bắt đầu giảm thanh tiến độ
+  setTimeout(function() {
+      // Cập nhật lại transition và bắt đầu quá trình giảm thanh tiến độ
+      progressBar.style.transition = 'width 3s linear';
+      progressBar.style.width = '100%';
+  }, 10);
+
+  // Hiển thị animation xuất hiện
+  notification.style.animation = 'none'; // Reset animation
+  notification.offsetHeight;  // Triggers a reflow, flushing the CSS changes
+  notification.style.animation = 'slideIn 0.5s ease-out forwards'; // Thêm lại animation xuất hiện
+  
+  // Ẩn thông báo sau 3 giây
+  setTimeout(function() {
+      notification.style.animation = 'slideOut 0.5s ease-out forwards';
+  }, 3000);
+});
+
+
