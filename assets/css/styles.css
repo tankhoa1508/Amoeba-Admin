@@ -22,7 +22,7 @@
 :root {
   --primary: #fd7513;
   --dark-orange: #ec6626;
-  --backgroud: #f8f8f8;
+  --background: #f8f8f8;
   --text: #616161;
   --active: #34c759;
   --blocked: #ff3b30;
@@ -241,7 +241,7 @@ ul {
 
 body {
   display: flex;
-  background-color: #f8f8f8;
+  background-color: var(--background);
   width: 100%;
   height: 100vh;
 }
@@ -368,7 +368,7 @@ body {
 .header-nav__list .subsearch-container .header-nav__subsearch {
   border-radius: 6px;
   border: none;
-  background-color: #f8f8f8;
+  background-color: var(--background);
   padding-left: 14px;
 }
 
@@ -592,7 +592,7 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #ff3b30;
+  background-color: var(--blocked);
 }
 
 .mainContent__container .controlBoard-list__item .Board__link .img-text {
@@ -743,7 +743,7 @@ div.dt-container div.dt-layout-table > div {
   font-weight: 800;
   line-height: 14.32px;
   text-align: center;
-  background: #f8f8f8;
+  background: var(--background);
   color: #b6b6b6;
   /* margin-left: 7px; */
 }
@@ -823,7 +823,7 @@ table.dataTable thead > tr > th.dt-orderable-asc,
 table.dataTable thead > tr > th.dt-orderable-desc,
 table.dataTable thead > tr > td.dt-orderable-asc,
 table.dataTable thead > tr > td.dt-orderable-desc {
-  background-color: #f8f8f8;
+  background-color: var(--background);
   border: none;
   margin-left: 7px;
 }
@@ -965,7 +965,7 @@ div.dt-container div.dt-layout-full > *:only-child {
   height: 24px;
   margin: 0 4px;
   border-radius: 8px;
-  background-color: var(--backgroud);
+  background-color: var(--background);
 }
 
 .mainContent div.dt-container div.dt-paging {
@@ -1579,7 +1579,7 @@ div.dt-container div.dt-layout-full > *:only-child {
   font-family: BOLD;
   font-size: 12px;
   font-weight: 400;
-  color: red;
+  color: var(--blocked);
 }
 
 .mainContent .col-container .product-card .body .inventory {
@@ -1663,7 +1663,7 @@ div.dt-container div.dt-layout-full > *:only-child {
 }
 
 .mainContent .col-container .btn-change:hover {
-  background-color: #32ade6;
+  background-color: var(--owner);
   color: #fff;
 }
 
@@ -1886,8 +1886,8 @@ div.dt-container div.dt-layout-full > *:only-child {
   border-radius: 8px;
   background-color: #32ade61a;
 
-  border: 1px solid #32ade6;
-  color: #32ade6;
+  border: 1px solid var(--owner);
+  color: var(--owner);
 
   font-family: BOLD;
   font-size: 14px;
@@ -1909,8 +1909,8 @@ div.dt-container div.dt-layout-full > *:only-child {
 .mainContent .col-container .module-non-active {
   background-color: #32ade61a;
 
-  border: 1px solid #32ade6;
-  color: #32ade6;
+  border: 1px solid var(--owner);
+  color: var(--owner);
 }
 
 .mainContent .col-container .modules {
